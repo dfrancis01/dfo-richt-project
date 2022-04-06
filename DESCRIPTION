@@ -1,0 +1,10 @@
+Package: RiTCH
+Title: Riparian Critical Habitat Tool
+Version: 0.0.0.9000
+Authors@R: 
+    person("Dorlan", "Francis", , "dorlan.francis02@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This demo app created as part of the Riparian Critical Habitat Project. A tool to guide the delineation of critical habitat in the riparian zone for listed freshwater fishes and mussels.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
