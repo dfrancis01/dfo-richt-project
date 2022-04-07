@@ -5,6 +5,7 @@
 #'     DO NOT REMOVE.
 #' @import shiny
 #' @noRd
+#' @return Shiny UI
 shinyUI <- function(session){
     tagList(
     fluidPage(
