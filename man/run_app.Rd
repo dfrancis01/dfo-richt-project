@@ -4,8 +4,16 @@
 \alias{run_app}
 \title{Run Shiny App}
 \usage{
-run_app()
+run_app(host = NULL, port = NULL)
+}
+\arguments{
+\item{host}{character specify host name}
+
+\item{port}{numeric specify port number}
 }
 \description{
 Run Shiny App
+}
+\author{
+Dorlan Francis
 }
