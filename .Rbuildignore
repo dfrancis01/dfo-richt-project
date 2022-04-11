@@ -15,3 +15,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+^RiTCH\.Rcheck$
+^RiTCH.*\.tar\.gz$
+^RiTCH.*\.tgz$
