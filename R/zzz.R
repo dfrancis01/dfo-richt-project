@@ -11,7 +11,14 @@
       "www/img",
       package = "RiTCH"
     )
-  )
+  )# Img
+  shiny::addResourcePath(
+    prefix = "js",
+    directoryPath = system.file(
+      "www/js",
+      package = "RiTCH"
+    )
+  )# Js
 }
 
 #' Title
@@ -22,4 +29,5 @@
 #' @import shiny
 .onUnload <- function(libname, pkgname) {
   shiny::removeResourcePath("www/img")
+  shiny::removeResourcePath("www/js")
 }
