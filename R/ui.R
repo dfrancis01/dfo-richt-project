@@ -32,7 +32,9 @@ shinyUI <- function(session){
         shinydashboardPlus::dashboardHeader(title = mod_Title_Logo_UI("ritchLogo")),
         shinydashboardPlus::dashboardSidebar(),
         shinydashboard::dashboardBody(
-            tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "css/RiTCH.css"))
+            tags$head(
+              tags$link(rel = "icon", type="image/png", href="img/RiCHT_16x16px.png"),
+              tags$link(rel = "stylesheet", type = "text/css", href = "css/RiTCH.css"))
             # tags$head(tags$style(HTML(mycss))),
         )
     )
