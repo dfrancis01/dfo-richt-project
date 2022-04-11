@@ -9,5 +9,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: 
-    shiny
+    magrittr,
+    shiny,
+    shinydashboard,
+    shinydashboardPlus
 RoxygenNote: 7.1.2

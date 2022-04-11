@@ -1,5 +1,6 @@
 #' Title
 #'
+#' @description add resource paths for images, javascript and css files
 #' @param libname default
 #' @param pkgname default
 #'
@@ -30,6 +31,7 @@
 
 #' Title
 #'
+#' @description removes resource paths that were load by the onLoad function
 #' @param libname default
 #' @param pkgname default
 #'
