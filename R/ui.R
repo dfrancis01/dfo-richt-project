@@ -24,7 +24,14 @@ shinyUI <- function(session){
 
         # Show a plot of the generated distribution
         mainPanel(
-            plotOutput("distPlot")
+            plotOutput("distPlot"),
+            h2("Lined Image"),
+            img(src="img/rshiny-logo.png",width="auto", height="50px",package="RiTCH"),
+            h2("Rendered Image"),
+            imageOutput("myImage"),
+
+
+
         )
     )
     )#fluidpage
