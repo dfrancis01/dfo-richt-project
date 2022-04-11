@@ -19,6 +19,13 @@
       package = "RiTCH"
     )
   )# Js
+  shiny::addResourcePath(
+    prefix = "css",
+    directoryPath = system.file(
+      "www/css",
+      package = "RiTCH"
+    )
+  )# CSS
 }
 
 #' Title
@@ -30,4 +37,5 @@
 .onUnload <- function(libname, pkgname) {
   shiny::removeResourcePath("www/img")
   shiny::removeResourcePath("www/js")
+  shiny::removeResourcePath("www/css")
 }
