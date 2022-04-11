@@ -1,0 +1,3 @@
+function myJsHello(){
+  alert('Hello!')
+}

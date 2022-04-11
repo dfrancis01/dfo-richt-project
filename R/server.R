@@ -17,4 +17,14 @@ shinyServer <- function(input, output, session) {
         graphics::hist(x, breaks = bins, col = 'darkgray', border = 'white')
 
     })
+
+    output$myImage <- renderImage(deleteFile = FALSE,{
+      list(src = system.file("www/img/rshiny-logo.png", package = "RiTCH"),
+           height = "auto",
+           width = "50px",
+           contentType = 'image/png',
+           alt = "This is alternate text")
+    })
+
+
 }
