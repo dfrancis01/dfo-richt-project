@@ -1,6 +1,6 @@
 #' Title & Logo for Atmel Temple Dashboard
 #'
-#' @param id
+#' @param id is use with ns('') to uniquely identify module specific ids not used currently
 #'
 #' @return
 #' @export

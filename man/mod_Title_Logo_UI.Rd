@@ -7,7 +7,7 @@
 mod_Title_Logo_UI(id)
 }
 \arguments{
-\item{id}{}
+\item{id}{is use with ns('') to uniquely identify module specific ids not used currently}
 }
 \value{
 

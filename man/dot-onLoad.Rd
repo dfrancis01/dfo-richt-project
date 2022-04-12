@@ -12,5 +12,5 @@
 \item{pkgname}{default}
 }
 \description{
-Title
+add resource paths for images, javascript and css files
 }

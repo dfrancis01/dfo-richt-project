@@ -12,5 +12,5 @@
 \item{pkgname}{default}
 }
 \description{
-Title
+removes resource paths that were load by the onLoad function
 }
