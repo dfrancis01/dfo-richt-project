@@ -5,7 +5,7 @@
 #'
 #' @import shiny
 #' @import shinydashboard
-#' @import shinydashboardPlus
+#' @importFrom  shinydashboardPlus dashboardHeader dashboardSidebar dashboardPage taskItem notificationItem messageItem
 #' @noRd
 #' @return Shiny UI
 mycss<-"
