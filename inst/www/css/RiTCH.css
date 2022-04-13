@@ -1,20 +1,23 @@
-/*Atmel logo override*/
+/*ShinyDashboardPlus Atmel logo override*/
 .main-header .logo {
   padding: 0;
 }
-
 /*
 #ritchLogoText{
-  color:red;
+  color:green;
 }
-span#ritchLogoText::first-letter{
-  font-weight: bold;
-  color:yellow;
+*/
+
+/*GC Footer */
+.footer-wrapper{
+  display:flex;
+  flex-directiom:row;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.footer-copyright, .footer-build{
+   font-size: large;
+   font-weight: bold;
 }
 
-a > span.logo-lg::nth-letter(3){
-  font-weight: bold;
-  color:red;
-}
-//Todo, requires jquery possibly
-*/

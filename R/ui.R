@@ -5,26 +5,9 @@
 #'
 #' @import shiny
 #' @import shinydashboard
-#' @importFrom  shinydashboardPlus dashboardHeader dashboardSidebar dashboardPage taskItem notificationItem messageItem
+#' @importFrom  shinydashboardPlus dashboardHeader dashboardSidebar dashboardPage dashboardFooter taskItem notificationItem messageItem
 #' @noRd
 #' @return Shiny UI
-mycss<-"
-/*Atmel logo override*/
-.main-header .logo {
-  padding: 0;
-}
-/*
-#ritchLogoText{
-    color: red;
-}
-*/ Debug
-span[id = 'ritchLogoText']:nth-letter(1){
-  font-weight: bold;
-  color: red;
-}
-"
-
-
 
 shinyUI <- function(session){
     shinydashboardPlus::dashboardPage(
@@ -35,7 +18,10 @@ shinyUI <- function(session){
             tags$head(
               tags$link(rel = "icon", type="image/png", href="img/RiCHT_16x16px.png"),
               tags$link(rel = "stylesheet", type = "text/css", href = "css/RiTCH.css"))
-            # tags$head(tags$style(HTML(mycss))),
-        )
-    )
-}
+        )#dashboardBody
+        ,footer = shinydashboardPlus::dashboardFooter(
+          left = mod_Footer_UI("ritchFooter"),
+          right = NULL
+        )#dashboardFooter
+    )#DashboardPage
+}#UI
