@@ -3,7 +3,7 @@
 #' @param id is use with ns('') to uniquely identify module specific component ids, not currently used.
 #'
 #' @return HTML tagList
-#' @export
+#' @noRd
 
 mod_Title_Logo_UI <- function(id) {
   ns <- NS(id)

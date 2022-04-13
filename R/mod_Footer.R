@@ -3,7 +3,7 @@
 #' @param id Unique id use with ns()
 #'
 #' @return HTML div wrapper for footer elements
-#' @export
+#' @noRd
 mod_Footer_UI <- function(id) {
   ns <- NS(id)
       div(class="footer-wrapper",
@@ -16,8 +16,7 @@ mod_Footer_UI <- function(id) {
 #' App Footer Module Server
 #'
 #' @param id Unique id use with ns()
-#'
-#' @export
+#
 #' @importFrom utils packageName packageVersion
 mod_Footer_Server <- function(id) {
   moduleServer(
