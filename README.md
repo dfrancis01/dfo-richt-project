@@ -39,7 +39,7 @@ You can install the development version of RiCHT from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("dfrancis01/dfo-RiCHT-project")
+devtools::install_github("dfrancis01/dfo-richt-project")
 RiCHT::run_app()
 ```
 
