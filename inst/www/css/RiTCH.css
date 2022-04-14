@@ -20,4 +20,16 @@
    font-size: large;
    font-weight: bold;
 }
+.crestDFO{
+  display:block;
+  text-align:center;
+}
 
+.crestDFO > img{
+  width: 75px;
+  height: auto;
+  border-radius: 45%;
+}
+.sideHR{
+  border-top: 1px grey;
+}
