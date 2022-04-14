@@ -10,21 +10,21 @@
     prefix = "img",
     directoryPath = system.file(
       "www/img",
-      package = "RiTCH"
+      package = "RiCHT"
     )
   )# Img
   shiny::addResourcePath(
     prefix = "js",
     directoryPath = system.file(
       "www/js",
-      package = "RiTCH"
+      package = "RiCHT"
     )
   )# Js
   shiny::addResourcePath(
     prefix = "css",
     directoryPath = system.file(
       "www/css",
-      package = "RiTCH"
+      package = "RiCHT"
     )
   )# CSS
 }

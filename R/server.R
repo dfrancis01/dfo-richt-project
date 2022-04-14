@@ -7,5 +7,5 @@
 # @importFrom datasets datasets::faithful
 #' @importFrom graphics hist
 shinyServer <- function(input, output, session) {
-  mod_Footer_Server("ritchFooter")
+  mod_Footer_Server("RiCHTFooter")
 }

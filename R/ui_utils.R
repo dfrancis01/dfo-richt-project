@@ -9,7 +9,7 @@ headerLinks <- function(){
   tags$head(
     tags$link(rel = "icon", type="image/png", href="img/RiCHT_16x16px.png"),
     tags$link(rel = "icon", type="image/png", href="img/RiCHT_32x32px.png"),
-    tags$link(rel = "stylesheet", type = "text/css", href = "css/RiTCH.css")
+    tags$link(rel = "stylesheet", type = "text/css", href = "css/RiCHT.css")
   )
 }
 
@@ -18,7 +18,7 @@ headerLinks <- function(){
 #'
 #' @return fresh theme
 #' @importFrom fresh use_theme create_theme adminlte_color adminlte_sidebar
-RiTCH_Theme <- function(){
+RiCHT_Theme <- function(){
   use_theme(
     create_theme( #Adminlte dashboard theme colour overide
       #https://rdrr.io/cran/fresh/man/adminlte_color.html

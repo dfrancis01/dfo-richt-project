@@ -3,13 +3,13 @@
 <!--
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. 
 -->
-<!--RiTCH Logo-->
+<!--RiCHT Logo-->
 
 <img src="man/figures/logo.png" align="right" height="139"/>
 
-<!--RiTCH Title-->
+<!--RiCHT Title-->
 
-# **RiTCH**
+# **RiCHT**
 
 <!-- badges: start -->
 
@@ -19,7 +19,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 <!--release, build pass--> <!-- badges: end -->
 
-The goal of the Riparian Critical Habitat Tool (RiTCH) is to provide
+The goal of the Riparian Critical Habitat Tool (RiCHT) is to provide
 quantitative evidence to support the delineation of riparian Critical
 Habitat. The tool provides an interface for a searchable database
 containing the current state of knowledge regarding the relationships
@@ -34,12 +34,12 @@ features have limited or no implementation.
 
 ## Installation
 
-You can install the development version of RiTCH from
+You can install the development version of RiCHT from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("dfrancis01/dfo-ritch-project")
+devtools::install_github("dfrancis01/dfo-RiCHT-project")
 ```
 
 ## Repo Structure
@@ -57,12 +57,12 @@ devtools::install_github("dfrancis01/dfo-ritch-project")
 │   README.md
 │   README.Rmd
 │   renv.lock
-│   RiTCH.Rproj
+│   RiCHT.Rproj
 ├───inst
 │   └───www
 │       ├───css
 │       │       *.css
-│       │       RiTCH.css
+│       │       RiCHT.css
 │       ├───img
 │       └───js
 │               *.js

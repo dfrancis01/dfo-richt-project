@@ -12,15 +12,15 @@
 
 shinyUI <- function(session){
     shinydashboardPlus::dashboardPage(
-        title = "RiTCH"
-        ,header = shinydashboardPlus::dashboardHeader(title = mod_Title_Logo_UI("ritchLogo"))#dashboardHeader
+        title = "RiCHT"
+        ,header = shinydashboardPlus::dashboardHeader(title = mod_Title_Logo_UI("RiCHTLogo"))#dashboardHeader
         ,sidebar = shinydashboardPlus::dashboardSidebar(
 
             disable = FALSE,
             width = NULL,
             collapsed = FALSE,
             minified = TRUE,
-            id = "ritchSidebar",
+            id = "RiCHTSidebar",
             sidebarMenu(
                 menuItem(strong("About"), tabName = "about", icon = icon("info-circle", lib = "font-awesome")) %>% bs_embed_tooltip("This is about app.", placement = 'right')
                 ,menuItem(strong("Primary Research"), #TODO: href = "#", #Link to external source info here
@@ -41,7 +41,7 @@ shinyUI <- function(session){
 
         )#dashboardSidebar
         ,body = shinydashboard::dashboardBody(
-            RiTCH_Theme()
+            RiCHT_Theme()
             ,headerLinks() #shiny links
             ,tabItems(
                 tabItem(tabName = "about", h1("About"))
@@ -58,7 +58,7 @@ shinyUI <- function(session){
         )#dashboardBody
         ,controlbar = shinydashboardPlus::dashboardControlbar()#dashboardControlbar
         ,footer = shinydashboardPlus::dashboardFooter(
-          left = mod_Footer_UI("ritchFooter"),
+          left = mod_Footer_UI("RiCHTFooter"),
           right = NULL
         )#dashboardFooter
     )#DashboardPage

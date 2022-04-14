@@ -15,6 +15,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
-^RiTCH\.Rcheck$
-^RiTCH.*\.tar\.gz$
-^RiTCH.*\.tgz$
+^RiCHT\.Rcheck$
+^RiCHT.*\.tar\.gz$
+^RiCHT.*\.tgz$
