@@ -41,7 +41,8 @@ shinyUI <- function(session){
 
         )#dashboardSidebar
         ,body = shinydashboard::dashboardBody(
-            headerLinks #shiny links
+            RiTCH_Theme()
+            ,headerLinks() #shiny links
             ,tabItems(
                 tabItem(tabName = "about", h1("About"))
                 ,tabItem(tabName = "primaryResearch", h1("Primary Research"))

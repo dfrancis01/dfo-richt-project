@@ -2,6 +2,11 @@
 .main-header .logo {
   padding: 0;
 }
+
+a.logo > span > img {
+  background-color: white;
+}
+
 /*
 #ritchLogoText{
   color:green;
