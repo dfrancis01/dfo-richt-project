@@ -57,23 +57,19 @@ devtools::install_github("dfrancis01/dfo-ritch-project")
 │   README.Rmd
 │   renv.lock
 │   RiTCH.Rproj
-│
 ├───inst
 │   └───www
 │       ├───css
 │       │       *.css
 │       │       RiTCH.css
-│       │
 │       ├───img
 │       └───js
 │               *.js
-│
 ├───man
 │   │   *.Rd
 │   │
 │   └───figures
 │           logo.png
-│
 ├───R
 │       mod_*.R
 │       run_app.R
@@ -81,7 +77,6 @@ devtools::install_github("dfrancis01/dfo-ritch-project")
 │       ui.R
 │       utils-pipe.R
 │       zzz.R
-│
 └───renv
        .gitignore
        activate.R
