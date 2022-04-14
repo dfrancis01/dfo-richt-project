@@ -12,5 +12,7 @@ Imports:
     magrittr,
     shiny,
     shinydashboard,
-    shinydashboardPlus
+    shinydashboardPlus,
+    bsplus,
+    fresh
 RoxygenNote: 7.1.2
