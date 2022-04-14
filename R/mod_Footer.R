@@ -1,4 +1,4 @@
-#' App Footer Module UI
+#' App Footer Module UI Code
 #'
 #' @param id Unique id use with ns()
 #'
@@ -7,13 +7,13 @@
 mod_Footer_UI <- function(id) {
   ns <- NS(id)
       div(class="footer-wrapper",
-          htmlOutput(ns("build")),                   #Build number from server
+          p(class='footer-build', "Build:", textOutput(ns("buildNumber"), inline = TRUE)),
           p(class='footer-copyright','\u00A9 2022'),
-          img(src="img/canada_c_314x75px.png", height = "50px", width="auto")
+          img(src="img/canada_c_314x75px.png", height = "40px", width="auto")
      )#div
 }#mod_Footer_UI
 
-#' App Footer Module Server
+#' App Footer Module Server Code
 #'
 #' @param id Unique id use with ns()
 #
@@ -23,12 +23,14 @@ mod_Footer_Server <- function(id) {
     id,
     function(input, output, session) {
       #Get package name and build number and render UI
-      packName <- packageName()
-      output$build <- renderUI({
-        HTML(paste0("<p class='footer-build'>Build:", packageVersion(packName),"</p>"))
+      packName <- utils::packageName()
+
+      output$buildNumber <- renderText({
+        #as.character(packageVersion(packName))
+        packName %>% utils::packageVersion() %>% as.character()
       })
 
-      #Get package copyright year and render UI
+      #TODO:Get package copyright year and render UI
     }
   )#moduleServer
 }#mod_Footer_Server

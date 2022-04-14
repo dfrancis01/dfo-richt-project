@@ -2,7 +2,7 @@
 % Please edit documentation in R/mod_Footer.R
 \name{mod_Footer_Server}
 \alias{mod_Footer_Server}
-\title{App Footer Module Server}
+\title{App Footer Module Server Code}
 \usage{
 mod_Footer_Server(id)
 }
@@ -10,5 +10,5 @@ mod_Footer_Server(id)
 \item{id}{Unique id use with ns()}
 }
 \description{
-App Footer Module Server
+App Footer Module Server Code
 }
