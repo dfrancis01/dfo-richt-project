@@ -1,3 +1,7 @@
+ /*Fix*/
+ body { min-height: 411px !important; }
+ footer.main-footer {max-height: 50px}
+
 /*ShinyDashboardPlus Atmel logo override*/
 .main-header .logo {
   padding: 0;
@@ -7,24 +11,23 @@ a.logo > span > img {
   background-color: white;
 }
 
-/*
-#RiCHTLogoText{
-  color:green;
-}
-*/
-
 /*GC Footer */
 .footer-wrapper{
   display:flex;
   flex-directiom:row;
   justify-content:space-between;
-  align-items:center;
+  /*align-items:center;*/
   flex-wrap: wrap;
 }
 .footer-copyright, .footer-build{
    font-size: large;
    font-weight: bold;
 }
+.footer-CanLogo{
+  height: 20px;
+  width: auto;
+}
+/*
 .crestDFO{
   display:block;
   text-align:center;
@@ -38,3 +41,4 @@ a.logo > span > img {
 .sideHR{
   border-top: 1px grey;
 }
+*/

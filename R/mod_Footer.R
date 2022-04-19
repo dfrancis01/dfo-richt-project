@@ -9,7 +9,7 @@ mod_Footer_UI <- function(id) {
       div(class="footer-wrapper",
           p(class='footer-build', "Build:", textOutput(ns("buildNumber"), inline = TRUE)),
           p(class='footer-copyright','\u00A9 2022'),
-          img(src="img/canada_c_314x75px.png", height = "40px", width="auto")
+          img(src="img/canada_c_314x75px.png", class = "footer-CanLogo")
      )#div
 }#mod_Footer_UI
 

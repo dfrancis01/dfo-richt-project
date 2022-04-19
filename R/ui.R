@@ -12,7 +12,8 @@
 
 shinyUI <- function(session){
     shinydashboardPlus::dashboardPage(
-        title = "RiCHT"
+        skin = 'blue-light'
+        ,title = "RiCHT"
         ,header = shinydashboardPlus::dashboardHeader(title = mod_Title_Logo_UI("RiCHTLogo"))#dashboardHeader
         ,sidebar = shinydashboardPlus::dashboardSidebar(
 
