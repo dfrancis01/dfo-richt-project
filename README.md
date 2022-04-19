@@ -20,7 +20,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/RiCHT)](https://CRAN.R-project.org/package=RiCHT)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-
+[![R-CMD-check](https://github.com/dfrancis01/dfo-richt-project/workflows/R-CMD-check/badge.svg)](https://github.com/dfrancis01/dfo-richt-project/actions)
 <!-- badges: end -->
 
 The goal of the Riparian Critical Habitat Tool (RiCHT) is to provide
