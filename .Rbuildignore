@@ -18,3 +18,4 @@
 ^RiCHT\.Rcheck$
 ^RiCHT.*\.tar\.gz$
 ^RiCHT.*\.tgz$
+^\.github$
