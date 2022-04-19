@@ -12,12 +12,16 @@ You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-da
 # **RiCHT**
 
 <!-- badges: start -->
+<!--release, build pass-->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/RiCHT)](https://CRAN.R-project.org/package=RiCHT)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-<!--release, build pass--> <!-- badges: end -->
+
+<!-- badges: end -->
 
 The goal of the Riparian Critical Habitat Tool (RiCHT) is to provide
 quantitative evidence to support the delineation of riparian Critical

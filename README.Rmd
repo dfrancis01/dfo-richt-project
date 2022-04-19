@@ -23,9 +23,12 @@ knitr::opts_chunk$set(
 # **RiCHT**
 
 <!-- badges: start -->
-
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 <!--release, build pass-->
+
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) 
+[![CRAN status](https://www.r-pkg.org/badges/version/RiCHT)](https://CRAN.R-project.org/package=RiCHT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 <!-- badges: end -->
 
 The goal of the Riparian Critical Habitat Tool (RiCHT) is to provide quantitative evidence to support the delineation of riparian Critical Habitat. The tool provides an interface for a searchable database containing the current state of knowledge regarding the relationships between the riparian zone (attributes and processes), aquatic features, and aquatic species at risk.
