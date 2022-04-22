@@ -1,10 +1,30 @@
- /*Fix*/
- body { min-height: 411px !important; }
- footer.main-footer {max-height: 50px}
+/************************************/
+/*Created by: Dorlan Francis        */
+/*Date: June, 2022                  */
+/*Project: RiCHT                    */
+/*File: RiCHT.css                   */
+/*Description: Main project CSS File*/
+/************************************/
+/*Main Package CSS*/
+
+/*Imports css to RiCHT main css     */
+@import url("AboutPage.css");
+
+/************************************/
+
+/*Fix*/
+ body { min-height: 411px !important; }             /*fixes white space below footer*/
+ footer.main-footer {max-height: 50px}              /*default footer height override*/
+
+ .myclearfix::after {                               /*DEBUG delete if not needed*/
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*ShinyDashboardPlus Atmel logo override*/
 .main-header .logo {
-  padding: 0;
+  padding: 0;                                       /*Removed padding so image visible*/
 }
 
 a.logo > span > img {
@@ -12,7 +32,7 @@ a.logo > span > img {
 }
 
 /*GC Footer */
-.footer-wrapper{
+.footer-wrapper{                                    /*.footer-wrapper override*/
   display:flex;
   flex-directiom:row;
   justify-content:space-between;
@@ -27,6 +47,7 @@ a.logo > span > img {
   height: 20px;
   width: auto;
 }
+/*Side Panel Logo/crest */
 /*
 .crestDFO{
   display:block;

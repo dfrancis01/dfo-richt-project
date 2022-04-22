@@ -1,6 +1,6 @@
 Package: RiCHT
 Title: Riparian Critical Habitat Tool
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: 
     person("Dorlan", "Francis", , "dorlan.francis02@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))

@@ -1,0 +1,58 @@
+/************************************/
+/*Created by: Dorlan Francis        */
+/*Date: June, 2022                  */
+/*Project: RiCHT                    */
+/*File: AboutPage.css               */
+/*Description: Main project CSS File*/
+/************************************/
+/*About page*/
+
+/*About Pg Riparian Critical Habitat Tool Info Section*/
+.aboutPg-info img { /*selects img tag that is a decentant*/
+    max-width: 100%;
+    min-width: 129px;
+    height: auto;
+    border: 4px solid #8D8D8D;
+    border-radius: 25px;
+}
+.aboutPg-info-about{
+    padding:40px;
+}
+
+/*About Pg Contributors Section*/
+div.aboutPg-contributors > div > ul > li {
+    list-style-type: none; /*remove list bulits*/
+}
+
+    div.aboutPg-contributors > div > ul > li:first-child {
+        font-weight: bold; /*Bold 1st element in the lsit*/
+        font-size: large;
+    }
+
+/*About Pg Development Section*/
+ul.aboutPg-Development-logos {
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    padding: 0 40px;
+}
+.aboutPg-Development-logos > li > img {
+    max-height: 50px; /*Limit size of logo images*/
+    width: auto;
+}
+
+/*TODO Convert userList & userListItem to ul & li*/
+.aboutPg-Development-logos > li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+.aboutPg-Development h3 {
+    margin: 0;
+    padding: 0 40px;
+}
+.aboutPg-Development p{
+    margin:0;
+    padding:0 40px;
+}

@@ -45,7 +45,7 @@ shinyUI <- function(session){
             RiCHT_Theme()
             ,headerLinks() #shiny links
             ,tabItems(
-                tabItem(tabName = "about", h1("About"))
+                tabItem(tabName = "about", mod_About_Page_UI(id="richt_about"))
                 ,tabItem(tabName = "primaryResearch", h1("Primary Research"))
                 ,tabItem(tabName = "species", h1("Species"))
                 ,tabItem(tabName = "map", h1("Map"))
