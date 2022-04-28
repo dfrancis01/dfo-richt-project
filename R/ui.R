@@ -30,7 +30,7 @@ shinyUI <- function(session){
             minified = TRUE,
             sidebarMenu(
                 id = "RiCHTSidebarMenu"
-                ,menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "dev", badgeColor = "red")
+                ,menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red", selected = TRUE) %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Aquatic Features", tabName = "habitat", icon = icon("water", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
@@ -52,7 +52,7 @@ shinyUI <- function(session){
             ,headerLinks() #shiny links
             ,tabItems(
                 #Primary Search Section
-                tabItem(tabName = "primaryResearch", h1("Primary Research"))
+                tabItem(tabName = "primaryResearch", mod_Primary_Research_Info_Page_UI("RiCHT"))
                 ,tabItem(tabName = "map", h1("Designatable Unit (Map)"))
                 ,tabItem(tabName = "species", h1("Species"))
                 ,tabItem(tabName = "habitat", h1("Habitat"))
