@@ -47,19 +47,27 @@ a.logo > span > img {
   height: 20px;
   width: auto;
 }
+
 /*Side Panel Logo/crest */
-/*
-.crestDFO{
+.crestLogo{
   display:block;
   text-align:center;
+
+  z-index: 1000;
+  position:relative;
 }
 
-.crestDFO > img{
+.crestLogo > img{
   width: 75px;
   height: auto;
   border-radius: 45%;
+
+
+  overflow: visible;
+  z-index: 1001;
+  position: relative;
 }
 .sideHR{
-  border-top: 1px grey;
+  border-top: 1px solid white;
+
 }
-*/
