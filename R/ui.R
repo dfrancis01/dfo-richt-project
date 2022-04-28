@@ -18,16 +18,19 @@ shinyUI <- function(session){
         skin = 'blue-light'
         # ,freshTheme = RiCHT_Theme() How the docs say theming works
         ,title = "RiCHT"
-        ,header = shinydashboardPlus::dashboardHeader(title = mod_Title_Logo_UI("RiCHTLogo"))#dashboardHeader
+        ,header = shinydashboardPlus::dashboardHeader(
+            title = mod_Title_Logo_UI("RiCHTLogo")
+            ,tags$li(class = "dropdown", actionLink(inputId = "navAbout", label = "About", icon = icon("info-circle")))
+            )#dashboardHeader
         ,sidebar = shinydashboardPlus::dashboardSidebar(
 
             disable = FALSE,
             width = NULL,
             collapsed = FALSE,
             minified = TRUE,
-            id = "RiCHTSidebar",
             sidebarMenu(
-                menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "dev", badgeColor = "red")
+                id = "RiCHTSidebarMenu"
+                ,menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "dev", badgeColor = "red")
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red", selected = TRUE) %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Aquatic Features", tabName = "habitat", icon = icon("water", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')

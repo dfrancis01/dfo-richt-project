@@ -3,9 +3,13 @@
 #' @param input,output,session Internal parameters for {shiny}.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @importFrom shinydashboard updateTabItems
 #' @noRd
-# @importFrom datasets datasets::faithful
-#' @importFrom graphics hist
 shinyServer <- function(input, output, session) {
   mod_Footer_Server("RiCHTFooter")
+
+  #Top Nav bar about button trigger event
+  observeEvent(input$navAbout,{
+    shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "about")
+  })
 }
