@@ -3,7 +3,7 @@
 /*Date: June, 2022                  */
 /*Project: RiCHT                    */
 /*File: AboutPage.css               */
-/*Description: Main project CSS File*/
+/*Description: A bout Page CSS File */
 /************************************/
 /*About page*/
 
@@ -48,11 +48,8 @@ ul.aboutPg-Development-logos {
     text-align: center;
     list-style-type: none;
 }
-.aboutPg-Development h3 {
+.aboutPg-Development h3,
+.aboutPg-Development p{
     margin: 0;
     padding: 0 40px;
-}
-.aboutPg-Development p{
-    margin:0;
-    padding:0 40px;
 }

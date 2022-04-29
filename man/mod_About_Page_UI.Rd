@@ -15,3 +15,6 @@ HTML Tags
 \description{
 This module returns the about page
 }
+\author{
+Dorlan Francis
+}

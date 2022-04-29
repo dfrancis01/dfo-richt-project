@@ -15,3 +15,6 @@ HTML Tags
 \description{
 This module returns the Primary Research info Page
 }
+\author{
+Dorlan Francis
+}

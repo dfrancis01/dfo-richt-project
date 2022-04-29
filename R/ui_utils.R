@@ -1,12 +1,14 @@
 #' Header Links
 #'
+#' @author Dorlan Francis
+#'
 #' @description This utility function is where all html links made in the `<head>`  tag will be placed.
 #' @return HTML Header Tag with link tags for Favicon, CSS, Javascript
 headerLinks <- function(){
   tags$head(
-    tags$link(rel = "icon", type="image/png", href="img/RiCHT_16x16px.png"),
-    tags$link(rel = "icon", type="image/png", href="img/RiCHT_32x32px.png"),
-    tags$link(rel = "stylesheet", type = "text/css", href = "css/RiCHT.css")
+    tags$link(rel = "icon", type="image/png", href="img/RiCHT_16x16px.png")
+    ,tags$link(rel = "icon", type="image/png", href="img/RiCHT_32x32px.png")
+    ,tags$link(rel = "stylesheet", type = "text/css", href = "css/RiCHT.css")
   )
 }
 

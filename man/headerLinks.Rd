@@ -12,3 +12,6 @@ HTML Header Tag with link tags for Favicon, CSS, Javascript
 \description{
 This utility function is where all html links made in the \verb{<head>}  tag will be placed.
 }
+\author{
+Dorlan Francis
+}

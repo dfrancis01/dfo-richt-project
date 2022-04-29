@@ -1,5 +1,7 @@
 #' About Page
 #'
+#' @author Dorlan Francis
+#'
 #' @description This module returns the about page
 #'
 #' @param id Modual ID character/string
@@ -111,7 +113,7 @@ mod_About_Page_UI <- function(id) {
           ,tags$span("2.0.3")
         )
         ,tags$li(
-          tags$img(src = "img/Leaflet_Logo.png", alt="")
+          tags$img(src = "img/geohelm-leafletjs.gif", alt="")
           ,tags$p("Leaflet")
           ,tags$span("2.1.1")
         )
