@@ -1,5 +1,7 @@
 #' Title
 #'
+#' @author Dorlan Francis
+#'
 #' @description add resource paths for images, javascript and css files
 #' @param libname default
 #' @param pkgname default

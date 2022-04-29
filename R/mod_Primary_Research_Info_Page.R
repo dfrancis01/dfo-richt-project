@@ -1,5 +1,7 @@
 #' About Primary Research Info Page
 #'
+#' @author Dorlan Francis
+#'
 #' @description  This module returns the Primary Research info Page
 #'
 #' @param id Modual ID character/string

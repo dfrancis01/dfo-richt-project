@@ -14,3 +14,6 @@
 \description{
 add resource paths for images, javascript and css files
 }
+\author{
+Dorlan Francis
+}

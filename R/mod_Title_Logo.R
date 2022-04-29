@@ -1,5 +1,7 @@
 #' Title & Logo for Atmel Temple Dashboard
 #'
+#' @author Dorlan Francis
+#'
 #' @param id is use with ns('') to uniquely identify module specific component ids, not currently used.
 #'
 #' @return HTML tagList

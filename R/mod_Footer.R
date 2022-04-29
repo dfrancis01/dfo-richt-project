@@ -1,5 +1,7 @@
 #' App Footer Module UI Code
 #'
+#' @author Dorlan Francis
+#'
 #' @param id Unique id use with ns()
 #'
 #' @return HTML div wrapper for footer elements
