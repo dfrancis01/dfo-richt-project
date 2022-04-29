@@ -62,7 +62,7 @@ mod_About_Page_UI <- function(id) {
         )#column
        , column(width=4,
           tags$ul(
-            tags$li("System Map Contributors")
+            tags$li("Systematic Map Contributors")
             ,tags$li("Amanda Caskenette")
             ,tags$li("Travis Durhack")
             ,tags$li("Brenley Yuan")
