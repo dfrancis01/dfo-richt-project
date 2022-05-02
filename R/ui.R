@@ -38,7 +38,7 @@ shinyUI <- function(session){
                 ,menuItem("Aquatic Features", tabName = "habitat", icon = icon("water", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
-                ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL)
+                ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Decision Analysis", tabName = "decissionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Models Results", tabName = "modelReults", icon = icon("file", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
@@ -60,7 +60,7 @@ shinyUI <- function(session){
                 ,tabItem(tabName = "habitat", h1("Habitat"))
                 ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
                 #Models Search Section
-                ,tabItem(tabName = "modelsResearch", h1("Models Research"))
+                ,tabItem(tabName = "modelsResearch", mod_Model_Info_Page_UI("RiCHT"))
                 ,tabItem(tabName = "decissionAnalysis", h1("Decission Analysis"))
                 ,tabItem(tabName = "modelReults", h1("Models Results"))
                 ,tabItem(tabName = "help", h1("Help"))                           #TODO: Proposed wizard

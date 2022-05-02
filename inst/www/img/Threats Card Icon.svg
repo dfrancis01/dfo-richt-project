@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229167 13.229167"
+   version="1.1"
+   id="svg2026"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Threats Card Icon.svg">
+  <defs
+     id="defs2020" />
+  <sodipodi:namedview
+     units="px"
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.2486559"
+     inkscape:cx="-3.9954691"
+     inkscape:cy="45.104285"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1436"
+     inkscape:window-height="1010"
+     inkscape:window-x="156"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="-62.441667,246.05833"
+       orientation="1,0"
+       id="guide2617" />
+    <sodipodi:guide
+       position="-39.158333,266.69583"
+       orientation="1,0"
+       id="guide2619" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2023">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#fdfefd;stroke-width:0.7;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.61378665,3.0523846 C 2.6008938,2.0490079 4.7954255,1.4612995 6.7095038,0.67819778 8.7518637,1.4633322 11.188357,2.2484669 12.664732,3.0336017 12.995588,7.4811811 9.7155984,11.785032 6.6636116,12.568458 3.5165607,11.554769 0.56161124,7.9160951 0.61378665,3.0523846 Z"
+       id="path2605"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#fdfefd;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 5.064762,4.5078031 6.7318246,2.8133989 8.3988862,4.4775462 7.380127,4.5078049 8.9237025,6.5047788 7.5962284,6.4442614 l 1.883162,1.9062047 -2.6240796,-0.030259 0.06174,0.8472037 0.4939445,0.6656576 c -0.432201,-0.010044 -0.8798372,0.010044 -1.3120391,0 L 6.6392076,9.16741 l 9e-7,-0.8774598 -2.5932081,0.060518 1.852291,-1.9062046 -1.3583465,-0.030258 1.574448,-1.9062037 z"
+       id="path2607"
+       sodipodi:nodetypes="cccccccccccccccccc" />
+  </g>
+</svg>
