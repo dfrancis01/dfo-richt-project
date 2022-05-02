@@ -10,6 +10,7 @@
 #' @importFrom shinydashboardPlus dashboardHeader dashboardControlbar dashboardSidebar
 #' @importFrom shinydashboardPlus dashboardPage dashboardFooter taskItem notificationItem messageItem
 #' @importFrom bsplus bs_embed_tooltip
+#' @importFrom shinyjs hidden
 #' @noRd
 #' @return Shiny UI
 
@@ -30,6 +31,7 @@ shinyUI <- function(session){
             minified = TRUE,
             sidebarMenu(
                 id = "RiCHTSidebarMenu"
+                ,shinyjs::useShinyjs()
                 ,menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red", selected = TRUE) %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
@@ -41,7 +43,7 @@ shinyUI <- function(session){
                 ,menuItem("Models Results", tabName = "modelReults", icon = icon("file", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 # ,menuItem("Help", tabName = "help", icon = icon("question-circle", lib = "font-awesome")) %>% bs_embed_tooltip("Help with the app.", placement = 'right')
-                ,menuItem(strong("About"), tabName = "about", icon = icon("info-circle", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("This is about app.", placement = 'right')
+                ,menuItem(text = "About", tabName = "about") %>% shinyjs::hidden()
                 # ,hr(class = "sideHR")
                 # ,div(class = "crestLogo logo-lg logo-mini", img(src="img/260px-DFO_Crest.jpg")) #TODO: Proposed RiCHT location
 
