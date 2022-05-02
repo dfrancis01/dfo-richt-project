@@ -1,3 +1,7 @@
+#Constants
+
+lorem <- "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia dignissim dapibus. Nulla ut sem elementum, scelerisque odio a, ultrices turpis."
+
 #' Header Links
 #'
 #' @author Dorlan Francis

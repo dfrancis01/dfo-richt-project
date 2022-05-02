@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Delineation Card Icon.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 13.229166 13.229167"
+   height="50"
+   width="50"
+   inkscape:export-filename="C:\Users\CaskenetteA\Desktop\Riparian\Delineation Card Icon.png"
+   inkscape:export-xdpi="232.23"
+   inkscape:export-ydpi="232.23">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1001"
+     inkscape:window-width="1920"
+     height="285in"
+     units="px"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     inkscape:snap-global="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="22.499316"
+     inkscape:cx="23.15869"
+     inkscape:zoom="11.2"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       id="guide873"
+       orientation="0.70710678,-0.70710678"
+       position="-128.28937,-6.9127644" />
+    <sodipodi:guide
+       id="guide875"
+       orientation="-0.70710678,-0.70710678"
+       position="113.85682,74.364486" />
+    <sodipodi:guide
+       id="guide877"
+       orientation="0.70710678,-0.70710678"
+       position="-43.278274,66.145833" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       sodipodi:nodetypes="ccccc"
+       d="M 8.7839085,6.5256114 C 10.690089,7.9194364 12.432207,9.2900274 9.7881224,11.463839 6.5327535,13.289673 2.4966649,11.933766 1.3506259,7.8408704 0.96580901,6.28058 0.59342611,4.145024 1.5959655,2.5403923 3.546874,-0.60819865 7.1369422,2.1899322 6.8455265,4.909508"
+       style="fill:none;stroke:#fefefd;stroke-width:0.85000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.85000004, 0.85000003999999996;stroke-dashoffset:0;stroke-opacity:1"
+       id="path847" />
+    <path
+       sodipodi:nodetypes="ccccsc"
+       id="path859"
+       d="M 3.9437553,7.8729143 9.9968399,1.7427157 C 10.443593,1.7401588 11.673549,2.8630451 11.64884,3.490828 L 5.6431771,9.5288499 c 0,0 -1.7722809,0.1826651 -1.8391224,0.030013 -0.072652,-0.165918 0.1397006,-1.6859486 0.1397006,-1.6859486 z"
+       style="fill:none;stroke:#fefefd;stroke-width:0.65;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path861"
+       d="m 4.5479527,7.3093829 0.908018,-0.012435 0.059808,0.8103861 h 0.7476109 l 0.05981,0.7803715"
+       style="fill:none;stroke:#fefefd;stroke-width:0.65;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path863"
+       d="M 3.8261373,8.9887653 C 4.1514311,9.3623874 4.2725692,9.5428418 4.364418,9.6040589"
+       style="fill:#ffffff;stroke:#fefefd;stroke-width:0.65;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       id="path865"
+       d="m 8.663527,3.1658194 1.584936,1.6207723"
+       style="fill:#ffffff;stroke:#fefefd;stroke-width:0.65;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+</svg>

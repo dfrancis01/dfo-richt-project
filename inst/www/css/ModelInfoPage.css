@@ -1,0 +1,22 @@
+/************************************/
+/*Created by: Dorlan Francis        */
+/*Date: June, 2022                  */
+/*Project: RiCHT                    */
+/*File: AboutPage.css               */
+/*Description: A bout Page CSS File */
+/************************************/
+
+
+:root{
+  --info-box-padding: 30px;
+  --img-icon-size: 3rem;  /*16x3 px*/
+}
+
+.info-head-icon{
+  max-height: var(--img-icon-size);
+  max-width: var(--img-icon-size);
+}
+
+.richt-info-box div > div.box-header{
+  padding-right: var(--info-box-padding);
+}
