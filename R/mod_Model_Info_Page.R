@@ -34,7 +34,7 @@ mod_Model_Info_Page_UI <- function(id) {
     , fluidRow(
       class = "richt-info-box"
       ,shinydashboardPlus::box(
-        title = span(img(src = "img/Delineation Card Icon.svg", class = "info-head-icon"),"Delineation")
+        title = span(img(src = "img/Delineation_Card_Icon.svg", class = "info-head-icon"),"Delineation")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 3
@@ -44,7 +44,7 @@ mod_Model_Info_Page_UI <- function(id) {
         ,p(lorem)#p
       )#Box
       ,shinydashboardPlus::box(
-        title = span(img(src = "img/Process Card Icon.svg", class = "info-head-icon"),"Processes")
+        title = span(img(src = "img/Process_Card_Icon.svg", class = "info-head-icon"),"Processes")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 3
@@ -54,7 +54,7 @@ mod_Model_Info_Page_UI <- function(id) {
         ,p(lorem)#p
       )#Box
       ,shinydashboardPlus::box(
-        title = span(img(src = "img/Threats Card Icon.svg", class = "info-head-icon"),"Threats")
+        title = span(img(src = "img/Threats_Card_Icon.svg", class = "info-head-icon"),"Threats")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 3
@@ -64,7 +64,7 @@ mod_Model_Info_Page_UI <- function(id) {
         ,p(lorem)#p
       )#Box
       ,shinydashboardPlus::box(
-        title = span(img(src = "img/Habitat Suitability Card Icon.svg", class = "info-head-icon"),"Habitat Suitability")
+        title = span(img(src = "img/Habitat_Suitability_Card_Icon.svg", class = "info-head-icon"),"Habitat Suitability")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 3
