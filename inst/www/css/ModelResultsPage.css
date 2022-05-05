@@ -1,0 +1,17 @@
+/************************************/
+/*Created by: Dorlan Francis        */
+/*Date: June, 2022                  */
+/*Project: RiCHT                    */
+/*File: ModelResultsPage.css        */
+/*Description: A bout Page CSS File */
+/************************************/
+
+
+:root{
+  --dark-color:#fff; /*Dark bg colors text color, TODO move to Settings.css*/
+}
+
+.btn-primary.btn-app-dark{
+  color:var(--dark-color);
+}
+
