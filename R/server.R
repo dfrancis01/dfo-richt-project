@@ -12,4 +12,7 @@ shinyServer <- function(input, output, session) {
   observeEvent(input$navAbout,{
     shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "about")
   })
+
+  #Model Result Page Module Server Code
+  mod_Page_Models_Results_Server("Page_Models_Results_1")
 }

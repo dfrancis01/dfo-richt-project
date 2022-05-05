@@ -1,6 +1,6 @@
 Package: RiCHT
 Title: Riparian Critical Habitat Tool
-Version: 0.0.0.9005
+Version: 0.0.0.9006
 Authors@R: c(
     person("Dorlan", "Francis", , "dorlan.francis02@gmail.com", role = "aut",
            comment = c(ORCID = "YOUR-ORCID-ID")),
@@ -17,5 +17,8 @@ Imports:
     shinydashboardPlus,
     bsplus,
     fresh,
-    shinyjs
+    shinyjs,
+    ggplot2,
+    DT,
+    shinipsum
 RoxygenNote: 7.1.2
