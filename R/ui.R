@@ -67,7 +67,7 @@ shinyUI <- function(session){
                 ,tabItem(tabName = "about", mod_Page_About_UI(id = "Page_About_1"))
             )
         )#dashboardBody
-        ,controlbar = shinydashboardPlus::dashboardControlbar()#dashboardControlbar
+        ,controlbar = shinydashboardPlus::dashboardControlbar(skin = "light")#dashboardControlbar
         ,footer = shinydashboardPlus::dashboardFooter(
           left = mod_Footer_UI(id = "Footer_1"),
           right = NULL

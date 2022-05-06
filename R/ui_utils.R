@@ -14,7 +14,7 @@ headerLinks <- function(){
     ,tags$link(rel = "icon", type="image/png", href="img/RiCHT_32x32px.png")
     ,tags$link(rel = "stylesheet", type = "text/css", href = "css/RiCHT.css")
   )
-}
+}#headerLinks
 
 
 #' Rich Theme
@@ -37,24 +37,28 @@ RiCHT_Theme <- function(){
       )
       #https://rdrr.io/cran/fresh/man/adminlte_sidebar.html
       ,fresh::adminlte_sidebar(
-        dark_bg = richt_secondary,                 #sidebar background colour darkmod default
-        # dark_hover_bg = richt_side_hover,           # " " " on hover
-        # dark_color = richt_white,                 #Sidebar Text Colour
-        # dark_hover_color = NULL,
-        # dark_submenu_bg = NULL,              #sidebar Sub-menu bcground colour
-        # dark_submenu_color = NULL,           #Sidebar Sub-menu Text Colour
-        # dark_submenu_hover_color = NULL,     #Sidebar Sub-menu Text Colour on Hover
+        # dark mode skin colour
 
-        # light sking colors
+        # dark_bg = NULL,                 #Sidebar background colour
+        # dark_hover_bg = NULL,           # " " " on hover
+        # dark_color = NULL,              #Sidebar Text Colour
+        # dark_hover_color = NULL,        #Sidebar Text Colour on hover
+        # dark_submenu_bg = NULL,         #sidebar Sub-menu background colour
+        # dark_submenu_color = NULL,      #Sidebar Sub-menu Text Colour
+        # dark_submenu_hover_color = NULL,#Sidebar Sub-menu Text Colour on Hover
+        # Note: No Submenu background colour on hover option
 
-        light_bg = richt_secondary,                 #sidebar background colour darkmod default
-        light_hover_bg = richt_side_hover,
-        light_color = richt_white,
-        light_hover_color = richt_white,
-        light_submenu_bg = NULL,
-        light_submenu_color = NULL,
-        light_submenu_hover_color = NULL
+        # light mode skin colour
+
+        light_bg = richt_secondary,       #Sidebar background colour light mod
+        light_hover_bg = richt_side_hover,# " " " on hover
+        light_color = richt_white,        #Sidebar Text Colour
+        light_hover_color = richt_white,  #Sidebar Text Colour on hover
+        light_submenu_bg = NULL,          #sidebar Sub-menu background colour
+        light_submenu_color = NULL,       #sidebar Sub-menu background colour
+        light_submenu_hover_color = NULL  #Sidebar Sub-menu Text Colour on Hover
+        # Note: No Submenu background colour on hover option
       )#adminlte_sidebar
     )#create_theme
   )#use_theme
-}
+}#RiCHT_Theme Function
