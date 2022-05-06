@@ -54,7 +54,7 @@ shinyUI <- function(session){
             ,headerLinks() #shiny links
             ,tabItems(
                 #Primary Search Section
-                tabItem(tabName = "primaryResearch", mod_Primary_Research_Info_Page_UI(id = "Primary_Research_Info_Page_1"))
+                tabItem(tabName = "primaryResearch", mod_Page_Primary_Research_Info_UI(id = "Page_Primary_Research_Info_1"))
                 ,tabItem(tabName = "map", h1("Designatable Unit (Map)"))
                 ,tabItem(tabName = "species", h1("Species"))
                 ,tabItem(tabName = "habitat", h1("Habitat"))

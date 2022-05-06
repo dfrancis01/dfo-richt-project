@@ -9,7 +9,7 @@
 #' @return HTML Tags
 #'
 #' @importFrom shinydashboardPlus box
-mod_Primary_Research_Info_Page_UI <- function(id) {
+mod_Page_Primary_Research_Info_UI <- function(id) {
   ns <- NS(id)
   tagList(
 
@@ -67,14 +67,14 @@ mod_Primary_Research_Info_Page_UI <- function(id) {
     )#fluidRow
 
   )#tagList
-}#mod_Primary_Research_Info_Page_UI
+}#mod_Page_Primary_Research_Info_UI
 
 #TODO Not used
-# mod_Primary_Research_Info_Page_Server <- function(id) {
+# mod_Page_Primary_Research_Info_Server <- function(id) {
 #   moduleServer(
 #     id,
 #     function(input, output, session) {
 #
 #     }
 #   )#moduleServer
-# }#mod_Primary_Research_Info_Page_Server
+# }#mod_Page_Primary_Research_Info_Server
