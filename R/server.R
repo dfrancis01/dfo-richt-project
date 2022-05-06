@@ -6,7 +6,7 @@
 #' @importFrom shinydashboard updateTabItems
 #' @noRd
 shinyServer <- function(input, output, session) {
-  mod_Footer_Server("RiCHTFooter")
+  mod_Footer_Server("Footer_1")
 
   #Top Nav bar about button trigger event
   observeEvent(input$navAbout,{
