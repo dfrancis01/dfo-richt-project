@@ -15,4 +15,8 @@ shinyServer <- function(input, output, session) {
 
   #Model Result Page Module Server Code
   mod_Page_Models_Results_Server("Page_Models_Results_1")
+
+  # Reactive values Search Area & Kopen zone
+  # Reactive values Species Name
+  # Reactive values Aquatic Features
 }
