@@ -40,7 +40,7 @@ shinyUI <- function(session){
 
                 ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Decision Analysis", tabName = "decissionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
-                ,menuItem("Models Results", tabName = "modelReults", icon = icon("file", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
+                ,menuItem("Models Results", tabName = "modelReults", icon = icon("file", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 # ,menuItem("Help", tabName = "help", icon = icon("question-circle", lib = "font-awesome")) %>% bs_embed_tooltip("Help with the app.", placement = 'right')
                 ,menuItem(text = "About", tabName = "about") %>% shinyjs::hidden()
