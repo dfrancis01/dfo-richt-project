@@ -1,8 +1,10 @@
-#' Title
+#' Models Results Page
+#'
+#' @author Dorlan Francis
 #'
 #' @param id
 #'
-#' @return fluidPage Models Results Screen
+#' @return Shiny FluidPage Models Results Screen
 #' @importFrom DT DTOutput
 #' @noRd
 #'
