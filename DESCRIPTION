@@ -20,5 +20,6 @@ Imports:
     shinyjs,
     ggplot2,
     DT,
-    shinipsum
+    shinipsum,
+    shinyWidgets
 RoxygenNote: 7.1.2
