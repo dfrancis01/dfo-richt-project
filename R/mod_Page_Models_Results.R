@@ -1,4 +1,6 @@
-#' Title
+#' Models Results Page
+#'
+#' @author Dorlan Francis
 #'
 #' @param id
 #'
