@@ -60,7 +60,7 @@ shinyUI <- function(session){
                 ,tabItem(tabName = "habitat", h1("Habitat"))
                 ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
                 #Models Search Section
-                ,tabItem(tabName = "modelsResearch", mod_Model_Info_Page_UI(id = "Model_Info_Page_1"))
+                ,tabItem(tabName = "modelsResearch", mod_Page_Model_Info_UI(id = "Page_Model_Info_1"))
                 ,tabItem(tabName = "decissionAnalysis", h1("Decission Analysis"))
                 ,tabItem(tabName = "modelReults", mod_Page_Models_Results_UI(id = "Page_Models_Results_1"))
                 ,tabItem(tabName = "help", h1("Help"))                           #TODO: Proposed wizard

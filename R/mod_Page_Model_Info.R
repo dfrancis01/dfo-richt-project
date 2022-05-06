@@ -9,7 +9,7 @@
 #' @return  HTML Tags
 #'
 #' @importFrom shinydashboardPlus box
-mod_Model_Info_Page_UI <- function(id) {
+mod_Page_Model_Info_UI <- function(id) {
   ns <- NS(id)
   tagList(
     # Model Info Section -------------------------------------------------------
@@ -78,11 +78,11 @@ mod_Model_Info_Page_UI <- function(id) {
 }#mon_Model_Info_UI
 
 #TODO Unused Server Compononent
-# mod_Model_Info_Page_Server <- function(id) {
+# mod_Page_Model_Info_Server <- function(id) {
 #   moduleServer(
 #     id,
 #     function(input, output, session) {
 #
 #     }
 #   )#moduleServer
-# }#mon_Model_Info_Page_Server
+# }#mon_Page_Model_Info_Server
