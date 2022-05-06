@@ -4,7 +4,7 @@
 #'
 #' @param id
 #'
-#' @return fluidPage Models Results Screen
+#' @return Shiny FluidPage Models Results Screen
 #' @importFrom DT DTOutput
 #' @noRd
 #'

@@ -6,12 +6,13 @@
 #'
 #' @param id Modual ID character/string
 #'
-#' @return  HTML Tags
+#' @return  Shiny FluidPage Model Search Info Page
+#' @noRd
 #'
 #' @importFrom shinydashboardPlus box
 mod_Page_Model_Info_UI <- function(id) {
   ns <- NS(id)
-  tagList(
+  shiny::fluidPage(
     # Model Info Section -------------------------------------------------------
 
     fluidRow(

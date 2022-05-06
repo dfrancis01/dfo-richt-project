@@ -6,12 +6,13 @@
 #'
 #' @param id Modual ID character/string
 #'
-#' @return HTML Tags
+#' @return Shiny FluidPage Primary Research Info Page
+#' @noRd
 #'
 #' @importFrom shinydashboardPlus box
 mod_Page_Primary_Research_Info_UI <- function(id) {
   ns <- NS(id)
-  tagList(
+  shiny::fluidPage(
 
     # Primary Research Info Section -------------------------------------------------------
 
