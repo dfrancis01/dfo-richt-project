@@ -46,6 +46,7 @@ mod_Page_Models_Results_UI <- function(id) {
       )#column
     )#fluidRow
 
+
     # MAVF Scores Table Section ----------------------------------------------------------
     ,fluidRow(
       shinydashboardPlus::box(
@@ -113,6 +114,7 @@ mod_Page_Models_Results_Server <- function(id) {
         # Return a list containing the filename and alt text
         list(src = filename,
              height = 400,             #Note:Effective size of placeholder Map
+
              width = 'auto',
              alt = paste("Placeholder Openstreet Map"))
 
@@ -124,6 +126,7 @@ mod_Page_Models_Results_Server <- function(id) {
       })
 
       #TODO: Placeholder Horizontal Bar graph ggplot test data
+
       output$horizontalBar <- renderPlot({
         g <- ggplot2::ggplot(ggplot2::mpg)
         g + ggplot2::geom_bar(ggplot2::aes(x = class, fill = factor(ggplot2::mpg$cyl))) + ggplot2::coord_flip()
