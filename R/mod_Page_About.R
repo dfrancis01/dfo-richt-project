@@ -9,7 +9,7 @@
 #' @return HTML Tags
 #'
 #' @importFrom shinydashboardPlus box
-mod_About_Page_UI <- function(id) {
+mod_Page_About_UI <- function(id) {
   ns <- NS(id)
   tagList(
 
@@ -125,17 +125,17 @@ mod_About_Page_UI <- function(id) {
     )#box
   )#fluidRow
   )#tagList
-}#mod_About_Page_UI
+}#mod_Page_About_UI
 
 #TODO Not used
-# mod_About_Page_Server <- function(id) {
+# mod_Page_About_Server <- function(id) {
 #   moduleServer(
 #     id,
 #     function(input, output, session) {
 #
 #     }
 #   )#moduleServer
-# }#mod_About_Page_Server
+# }#mod_Page_About_Server
 
 
 #Note: for a function file from:https://stackoverflow.com/questions/61711777/how-to-create-an-adaptative-list-ulli-using-htmltools
