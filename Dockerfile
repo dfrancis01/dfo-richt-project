@@ -40,4 +40,4 @@ RUN Rscript -e 'remotes::install_local("richt",upgrade = "never")'
 EXPOSE 3838
 
 # run app on container start
-CMD ["R", "-e", "RiCHT::runApp(host = '0.0.0.0', port = 3838)"]
+CMD ["R", "-e", "RiCHT::run_app(host = '0.0.0.0', port = 3838)"]
