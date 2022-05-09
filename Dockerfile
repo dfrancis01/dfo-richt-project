@@ -1,4 +1,5 @@
-#Srouce Golem Package Framework
+# Developer: Dorlan.Francis02@gmail.com
+# Srouce Golem Package Framework : https://github.com/ThinkR-open/golem
 FROM rocker/r-ver:4.1.2
 RUN apt-get update && apt-get install -y  git-core libcurl4-openssl-dev libgit2-dev libicu-dev libssl-dev libxml2-dev make pandoc pandoc-citeproc zlib1g-dev && rm -rf /var/lib/apt/lists/*
 RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl', Ncpus = 4)" >> /usr/local/lib/R/etc/Rprofile.site
