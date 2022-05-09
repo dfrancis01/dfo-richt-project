@@ -34,7 +34,7 @@ RUN Rscript -e 'renv::restore()'
 
 # build rtich app
 #RUN Rscript -e 'install.packages("remotes")'
-RUN Rscript -e 'remotes::install_local("./richt")'
+RUN Rscript -e 'remotes::install_local("richt",upgrade = "never")'
 
 # expose port
 EXPOSE 3838
