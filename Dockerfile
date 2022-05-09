@@ -28,7 +28,7 @@ COPY . ./richt
 COPY ./renv.lock ./renv.lock
 
 # install renv & restore packages
-RUN Rscript -e 'install.packages(c("renv", "remotes")'
+RUN Rscript -e 'install.packages(c("renv", "remotes"))'
 RUN Rscript -e 'renv::consent(provided = TRUE)'
 RUN Rscript -e 'renv::restore()'
 
