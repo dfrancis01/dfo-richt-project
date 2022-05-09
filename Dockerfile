@@ -1,39 +1,18 @@
 # Developer: Dorlan.Francis02@gmail.com
-# Script Source: https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
-# Base image https://hub.docker.com/u/rocker/
-FROM rocker/shiny:4.2.0
-
-# system libraries of general use
-## install debian packages
-RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-    libxml2-dev \
-    libcairo2-dev \
-    libsqlite3-dev \
-    libmariadbd-dev \
-    libpq-dev \
-    libssh2-1-dev \
-    unixodbc-dev \
-    libcurl4-openssl-dev \
-    libssl-dev
-
-## update system libraries
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get clean
-
-# copy necessary files
-## app folder
-COPY . ./app
-## renv.lock file
-COPY ./renv.lock ./renv.lock
-
-# install renv & restore packages
-RUN Rscript -e 'install.packages("renv")'
-RUN Rscript -e 'renv::consent(provided = TRUE)'
-RUN Rscript -e 'renv::restore()'
-
-# expose port
-EXPOSE 3838
-
-# run app on container start
-CMD ["R", "-e", "shiny::runApp('/app/R', host = '0.0.0.0', port = 3838)"]
+# Srouce Golem Package Framework : https://github.com/ThinkR-open/golem
+FROM rocker/r-ver:4.1.2
+RUN apt-get update && apt-get install -y  git-core libcurl4-openssl-dev libgit2-dev libicu-dev libssl-dev libxml2-dev make pandoc pandoc-citeproc zlib1g-dev && rm -rf /var/lib/apt/lists/*
+RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl', Ncpus = 4)" >> /usr/local/lib/R/etc/Rprofile.site
+RUN R -e 'install.packages("remotes")'
+RUN Rscript -e 'remotes::install_version("shiny",upgrade="never", version = "1.7.1")'
+RUN Rscript -e 'remotes::install_version("config",upgrade="never", version = "0.3.1")'
+RUN Rscript -e 'remotes::install_version("testthat",upgrade="never", version = "3.1.3")'
+RUN Rscript -e 'remotes::install_version("spelling",upgrade="never", version = "2.2")'
+#RUN Rscript -e 'remotes::install_version("golem",upgrade="never", version = "0.3.2")'
+RUN mkdir /build_zone
+ADD . /build_zone
+WORKDIR /build_zone
+RUN R -e 'remotes::install_local(upgrade="never")'
+RUN rm -rf /build_zone
+EXPOSE 80
+CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0');RiCHT::run_app()"
