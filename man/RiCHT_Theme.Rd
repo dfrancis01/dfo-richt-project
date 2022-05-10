@@ -2,7 +2,7 @@
 % Please edit documentation in R/ui_utils.R
 \name{RiCHT_Theme}
 \alias{RiCHT_Theme}
-\title{Rich Theme}
+\title{Rich Theme (this is about setting colours of the app)}
 \usage{
 RiCHT_Theme()
 }
@@ -10,5 +10,5 @@ RiCHT_Theme()
 fresh theme
 }
 \description{
-Rich Theme
+Rich Theme (this is about setting colours of the app)
 }

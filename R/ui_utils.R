@@ -1,4 +1,4 @@
-#Constants
+#Constants (icons etc.)
 
 lorem <- "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia dignissim dapibus. Nulla ut sem elementum, scelerisque odio a, ultrices turpis."
 
@@ -17,7 +17,7 @@ headerLinks <- function(){
 }#headerLinks
 
 
-#' Rich Theme
+#' Rich Theme (this is about setting colours of the app)
 #'
 #' @return fresh theme
 #' @importFrom fresh use_theme create_theme adminlte_color adminlte_sidebar
