@@ -19,3 +19,5 @@
 ^RiCHT.*\.tar\.gz$
 ^RiCHT.*\.tgz$
 ^\.github$
+^\.dockerignore$
+^Dockerfile$
