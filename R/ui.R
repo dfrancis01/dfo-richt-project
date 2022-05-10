@@ -39,8 +39,8 @@ shinyUI <- function(session){
                 ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
-                ,menuItem("Decision Analysis", tabName = "decissionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
-                ,menuItem("Models Results", tabName = "modelReults", icon = icon("file", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
+                ,menuItem("Decision Analysis", tabName = "decisionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
+                ,menuItem("Models Results", tabName = "modelResults", icon = icon("file", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 # ,menuItem("Help", tabName = "help", icon = icon("question-circle", lib = "font-awesome")) %>% bs_embed_tooltip("Help with the app.", placement = 'right')
                 ,menuItem(text = "About", tabName = "about") %>% shinyjs::hidden()
@@ -61,8 +61,8 @@ shinyUI <- function(session){
                 ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
                 #Models Search Section
                 ,tabItem(tabName = "modelsResearch", mod_Page_Model_Info_UI(id = "Page_Model_Info_1"))
-                ,tabItem(tabName = "decissionAnalysis", h1("Decission Analysis"))
-                ,tabItem(tabName = "modelReults", mod_Page_Models_Results_UI(id = "Page_Models_Results_1"))
+                ,tabItem(tabName = "decisionAnalysis", mod_Page_Decision_Analysis_UI(id = "Page_Decision_Analysis_1"))
+                ,tabItem(tabName = "modelResults", mod_Page_Models_Results_UI(id = "Page_Models_Results_1"))
                 ,tabItem(tabName = "help", h1("Help"))                           #TODO: Proposed wizard
                 ,tabItem(tabName = "about", mod_Page_About_UI(id = "Page_About_1"))
             )
