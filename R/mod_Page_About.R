@@ -64,6 +64,7 @@ mod_Page_About_UI <- function(id) {
        , column(width=4,
           tags$ul(
             tags$li("Systematic Map Contributors")
+            ,tags$li("Eva Enders")
             ,tags$li("Amanda Caskenette")
             ,tags$li("Travis Durhack")
             ,tags$li("Brenley Yuan")
