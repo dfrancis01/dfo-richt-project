@@ -21,3 +21,4 @@
 ^\.github$
 ^\.dockerignore$
 ^Dockerfile$
+^data-raw$

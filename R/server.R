@@ -18,5 +18,6 @@ shinyServer <- function(input, output, session) {
 
   # Reactive values Search Area & Kopen zone
   # Reactive values Species Name
+  mod_Page_Species_Server("Page_Species_1")
   # Reactive values Aquatic Features
 }
