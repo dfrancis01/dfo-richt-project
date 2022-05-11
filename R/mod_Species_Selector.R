@@ -25,6 +25,7 @@ mon_Species_Selector_UI <- function(id) {
 #' @return re list of ORDER,FAMILY,SCIENTIFIC,COMMON
 #' @noRd
 #' @importFrom dplyr filter
+#' @importFrom rlang .data
 #'
 mod_Species_Selector_Server <- function(id) {
   moduleServer(
@@ -40,7 +41,7 @@ mod_Species_Selector_Server <- function(id) {
         if(input$selectOrder == ""){
           c("",unique(SPECIES$FAMILY))
         } else {
-          c("",unique(dplyr::filter(SPECIES,ORDER==input$selectOrder)$FAMILY))
+          c("",unique(dplyr::filter(SPECIES,.data$ORDER==input$selectOrder)$FAMILY))
         }#if else
       })#selFam
       selectScientificList <- reactive({
@@ -48,7 +49,7 @@ mod_Species_Selector_Server <- function(id) {
         if(input$selectFamily == ""){
           c("",unique(SPECIES$`SCIENTIFIC NAME`))
         } else {
-          c("",unique(dplyr::filter(SPECIES,FAMILY==input$selectFamily)$`SCIENTIFIC NAME`))
+          c("",unique(dplyr::filter(SPECIES,.data$FAMILY==input$selectFamily)$`SCIENTIFIC NAME`))
         }#if else
       })#selFam
 
@@ -65,7 +66,7 @@ mod_Species_Selector_Server <- function(id) {
       #filterScientificName by FilterFamily
       observeEvent(input$selectScientific, {
         re$SCIENTIFIC <- input$selectScientific
-        re$Common <-dplyr::filter(SPECIES,`SCIENTIFIC NAME`==input$selectScientific)$`COMMON NAME`
+        re$Common <-dplyr::filter(SPECIES,.data$`SCIENTIFIC NAME`==input$selectScientific)$`COMMON NAME`
       })
 
       output$text_Summary <- renderText({

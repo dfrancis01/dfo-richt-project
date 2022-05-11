@@ -1,4 +1,4 @@
-#' Species Page
+#' Species Page UI
 #'
 #' @author Dorlan Francis
 #'
@@ -46,21 +46,17 @@ mod_Page_Species_UI <- function(id) {
   )#tagList
 }#mod_Species_UI
 
-#TODO Not used
-mod_Page_Species_Server <- function(id) {
-  moduleServer(
-    id,
-#' Title
+#' Species Page Server
 #'
-#' @param input
-#' @param output
-#' @param session
+#' @param id
 #'
 #' @return list of ORDER,FAMILY,SCIENTIFIC,COMMON
 #'
-#' @examples
 #' @noRd
 #'
+mod_Page_Species_Server <- function(id) {
+  moduleServer(
+    id,
     function(input, output, session) {
       ns <-session$ns
       mod_Species_Selector_Server("Species_Selector_1")
