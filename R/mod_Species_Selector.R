@@ -24,6 +24,7 @@ mon_Species_Selector_UI <- function(id) {
 #'
 #' @return re list of ORDER,FAMILY,SCIENTIFIC,COMMON
 #' @noRd
+#' @importFrom dplyr filter
 #'
 mod_Species_Selector_Server <- function(id) {
   moduleServer(

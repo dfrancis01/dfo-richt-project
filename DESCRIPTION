@@ -21,7 +21,8 @@ Imports:
     ggplot2,
     DT,
     shinipsum,
-    shinyWidgets
+    shinyWidgets,
+    dplyr
 RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
