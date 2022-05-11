@@ -44,7 +44,7 @@ mod_Page_Models_Results_UI <- function(id) {
         ,imageOutput(ns("map")) #Alternative Method
       )#Box
       ,column(width = 2,
-        shiny::actionButton(inputId = ns("downloadResults"), label = "Downlaod Results", icon = icon("file", lib = "font-awesome"), class = "btn btn-primary btn-lg btn-app-dark")
+        shiny::actionButton(inputId = ns("downloadResults"), label = "Download Results", icon = icon("file", lib = "font-awesome"), class = "btn btn-primary btn-lg btn-app-dark")
       )#column
     )#fluidRow
 
