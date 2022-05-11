@@ -34,12 +34,12 @@ shinyUI <- function(session){
                 ,shinyjs::useShinyjs()
                 ,menuItem(strong("Primary Research"), tabName = "primaryResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red", selected = TRUE) %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
-                ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
+                ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Aquatic Features", tabName = "habitat", icon = icon("water", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
-                ,menuItem("Decision Analysis", tabName = "decisionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
+                ,menuItem("Decision Analysis", tabName = "decisionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
                 ,menuItem("Models Results", tabName = "modelResults", icon = icon("file", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow") %>% bs_embed_tooltip("Default Tool Tip", placement = 'right')
 
                 # ,menuItem("Help", tabName = "help", icon = icon("question-circle", lib = "font-awesome")) %>% bs_embed_tooltip("Help with the app.", placement = 'right')
@@ -56,7 +56,7 @@ shinyUI <- function(session){
                 #Primary Search Section
                 tabItem(tabName = "primaryResearch", mod_Page_Primary_Research_Info_UI(id = "Page_Primary_Research_Info_1"))
                 ,tabItem(tabName = "map", h1("Designatable Unit (Map)"))
-                ,tabItem(tabName = "species", h1("Species"))
+                ,tabItem(tabName = "species", mod_Page_Species_UI(id="Page_Species_1"))
                 ,tabItem(tabName = "habitat", h1("Habitat"))
                 ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
                 #Models Search Section
