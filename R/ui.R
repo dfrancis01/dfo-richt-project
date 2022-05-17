@@ -35,7 +35,7 @@ shinyUI <- function(session){
 
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red", selected = TRUE)
                 ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow")
-                ,menuItem("Aquatic Features", tabName = "habitat", icon = icon("water", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red")
+                ,menuItem("Aquatic Features", tabName = "features", icon = icon("water", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red")
 
                 ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
@@ -57,7 +57,7 @@ shinyUI <- function(session){
                 tabItem(tabName = "primaryResearch", mod_Page_Primary_Research_Info_UI(id = "Page_Primary_Research_Info_1"))
                 ,tabItem(tabName = "map", h1("Designatable Unit (Map)"))
                 ,tabItem(tabName = "species", mod_Page_Species_UI(id="Page_Species_1"))
-                ,tabItem(tabName = "habitat", h1("Habitat"))
+                ,tabItem(tabName = "features", mod_Page_Aquatic_Features_UI (id="Page_Features_1"))
                 ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
                 #Models Search Section
                 ,tabItem(tabName = "modelsResearch", mod_Page_Model_Info_UI(id = "Page_Model_Info_1"))
