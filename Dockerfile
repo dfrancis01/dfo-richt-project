@@ -1,7 +1,7 @@
 # Developer: Dorlan.Francis02@gmail.com
 # Script Source: https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
 # Base image https://hub.docker.com/u/rocker/
-FROM rocker/shiny:4.1.2
+FROM rocker/shiny:4.2.0
 
 # system libraries of general use
 ## install debian packages
