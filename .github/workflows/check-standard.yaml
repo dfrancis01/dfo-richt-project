@@ -40,8 +40,8 @@ jobs:
       #  run: |
       #    install.packages("https://cran.r-project.org/bin/macosx/big-sur-arm64/contrib/4.1/terra_1.5-21.tgz", repos = NULL, type = .Platform$pkgType)
       #  shell: Rscript {0}
-      - name: Instal Mac OS dependancies
-        if: matrix.config.os == 'macOS-latest'
+     # - name: Instal Mac OS dependancies
+     #   if: matrix.config.os == 'macOS-latest'
       #  run: |
       #    brew install pkg-config proj geos gdal sqlite
 
@@ -57,14 +57,15 @@ jobs:
      #   if: matrix.config.os == 'macOS-latest'
      #   run: |
      #     gdalinfo --version
-      
+      - name: Instal Mac OS dependancies
+        if: matrix.config.os == 'macOS-latest'
       - uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
         with:
           needs: check
-          extra-packages: any::rcmdcheck
+          extra-packages: rcmdcheck
           
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rcmdcheck
+          extra-packages: rcmdcheck
 
       - uses: r-lib/actions/check-r-package@v2
