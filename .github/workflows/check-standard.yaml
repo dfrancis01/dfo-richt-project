@@ -36,21 +36,26 @@ jobs:
           r-version: ${{ matrix.config.r }}
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
+      - name: Install Terra Package
+        if: matrix.config.os == 'macOS-latest'
+        run: |
+          install.packages("https://cran.r-project.org/bin/macosx/big-sur-arm64/contrib/4.1/terra_1.5-21.tgz", repos = NULL, type = .Platform$pkgType)
+        shell: Rscript {0}
+     # - name: Instal Mac OS dependancies
+     #   if: matrix.config.os == 'macOS-latest'
+     #   run: brew install gdal
+     # - name: Set up GDAL
+     #   if: matrix.config.os == 'macOS-latest'
+     #   run: |
+     #     GDAL_VER=$(find /usr/local/Cellar/gdal/  -name "lib" | awk -F"/" '{print $7}')
+     #     GDAL_LDPATH=/usr/local/Cellar/gdal/$GDAL_VER/lib/
+     #     export LIBRARY_PATH=$GDAL_LDPATH
+     #     echo $LIBRARY_PATH
+     # - name: Test GDAL installation
+     #   if: matrix.config.os == 'macOS-latest'
+     #   run: |
+     #     gdalinfo --version
       
-      - name: Instal Mac OS dependancies
-        if: matrix.config.os == 'macOS-latest'
-        run: brew install gdal
-      - name: Set up GDAL
-        if: matrix.config.os == 'macOS-latest'
-        run: |
-          GDAL_VER=$(find /usr/local/Cellar/gdal/  -name "lib" | awk -F"/" '{print $7}')
-          GDAL_LDPATH=/usr/local/Cellar/gdal/$GDAL_VER/lib/
-          export LIBRARY_PATH=$GDAL_LDPATH
-          echo $LIBRARY_PATH
-      - name: Test GDAL installation
-        if: matrix.config.os == 'macOS-latest'
-        run: |
-          gdalinfo --version
       #- uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
       #  with:
       #    needs: check
