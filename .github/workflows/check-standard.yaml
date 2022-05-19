@@ -36,11 +36,25 @@ jobs:
           r-version: ${{ matrix.config.r }}
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
-          
-      - uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
-        with:
-          needs: check
-          extra-packages: any::rcmdcheck
+      
+      - name: Instal Mac OS dependancies
+        if: matrix.os == 'macOS-latest'
+        run: brew install gdal
+      - name: Set up GDAL
+        if: matrix.os == 'macOS-latest'
+        run: |
+          GDAL_VER=$(find /usr/local/Cellar/gdal/  -name "lib" | awk -F"/" '{print $7}')
+          GDAL_LDPATH=/usr/local/Cellar/gdal/$GDAL_VER/lib/
+          export LIBRARY_PATH=$GDAL_LDPATH
+          echo $LIBRARY_PATH
+      - name: Test GDAL installation
+        if: matrix.os == 'macOS-latest'
+        run: |
+          gdalinfo --version
+      #- uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
+      #  with:
+      #    needs: check
+      #    extra-packages: any::rcmdcheck
           
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
