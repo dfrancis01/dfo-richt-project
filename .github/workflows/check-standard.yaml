@@ -18,9 +18,9 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: macOS-latest,   r: '4.2.0'}
-          - {os: windows-latest, r: '4.2.0'}
-          - {os: ubuntu-latest,   r: '4.2.0'}
+          - {os: macOS-latest,   r: '4.1.2'}
+          - {os: windows-latest, r: '4.1.2'}
+          - {os: ubuntu-latest,   r: '4.1.2'}
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -42,8 +42,8 @@ jobs:
       #  shell: Rscript {0}
       - name: Instal Mac OS dependancies
         if: matrix.config.os == 'macOS-latest'
-        run: |
-          brew install pkg-config proj geos gdal sqlite
+      #  run: |
+      #    brew install pkg-config proj geos gdal sqlite
 
      #   run: brew install gdal
      # - name: Set up GDAL
@@ -58,10 +58,10 @@ jobs:
      #   run: |
      #     gdalinfo --version
       
-     # - uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
-     #   with:
-     #     needs: check
-     #     extra-packages: any::rcmdcheck
+      - uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
+        with:
+          needs: check
+          extra-packages: any::rcmdcheck
           
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
