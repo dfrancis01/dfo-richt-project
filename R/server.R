@@ -5,6 +5,7 @@
 #' @import shiny
 #' @importFrom shinydashboard updateTabItems
 #' @noRd
+#'
 shinyServer <- function(input, output, session) {
   mod_Footer_Server("Footer_1")
 
@@ -13,11 +14,14 @@ shinyServer <- function(input, output, session) {
     shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "about")
   })
 
-  #Model Result Page Module Server Code
-  mod_Page_Models_Results_Server("Page_Models_Results_1")
+  # Reactive values Search Area & Köppen zone
+  mod_Page_Map_Server(id = "Page_Map_1")
 
-  # Reactive values Search Area & Kopen zone
   # Reactive values Species Name
-  mod_Page_Species_Server("Page_Species_1")
+  mod_Page_Species_Server(id = "Page_Species_1")
+
   # Reactive values Aquatic Features
+
+  #Model Result Page Module Server Code
+  mod_Page_Models_Results_Server(id = "Page_Models_Results_1")
 }
