@@ -38,7 +38,7 @@ jobs:
 
       - name: Instal Mac OS dependancies
         if: matrix.config.os == 'macOS-latest'
-      - uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
+        uses: rstudio/shiny-workflows/setup-macOS-dependencies@v1
         with:
           needs: check
           extra-packages: any::rcmdcheck
