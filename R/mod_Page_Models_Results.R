@@ -8,7 +8,6 @@
 #' @importFrom DT DTOutput
 #' @noRd
 #'
-#' @importFrom DT DTOutput
 mod_Page_Models_Results_UI <- function(id) {
   ns <- NS(id)
   shiny::fluidPage(
