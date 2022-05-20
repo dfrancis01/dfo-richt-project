@@ -17,6 +17,9 @@
 /*Fix*/
  body { min-height: 411px !important; }             /*fixes white space below footer*/
  footer.main-footer {max-height: 50px}              /*default footer height override*/
+ div.wrapper {
+   overflow-y: hidden;                      /*Fix double scrollbar issue #61*/
+ }
 
  .myclearfix::after {                               /*DEBUG delete if not needed*/
   content: "";
