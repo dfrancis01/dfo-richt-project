@@ -14,11 +14,14 @@
 
 /************************************/
 
-/*Fix*/
- body { min-height: 411px !important; }             /*fixes white space below footer*/
- footer.main-footer {max-height: 50px}              /*default footer height override*/
+/*Fixes*/
+ body { min-height: 411px !important; }     /*fixes white space below footer*/
+ footer.main-footer {max-height: 50px}      /*default footer height override*/
+ div.wrapper {
+   overflow-y: hidden;                      /*Fix double scrollbar issue #61*/
+ }
 
- .myclearfix::after {                               /*DEBUG delete if not needed*/
+ .myclearfix::after {                       /*DEBUG delete if not needed*/
   content: "";
   clear: both;
   display: table;
@@ -26,7 +29,7 @@
 
 /*ShinyDashboardPlus Atmel logo override*/
 .main-header .logo {
-  padding: 0;                                       /*Removed padding so image visible*/
+  padding: 0;                               /*Removed padding so image visible*/
 }
 
 a.logo > span > img {
@@ -34,7 +37,7 @@ a.logo > span > img {
 }
 
 /*GC Footer */
-.footer-wrapper{                                    /*.footer-wrapper override*/
+.footer-wrapper{                            /*.footer-wrapper override*/
   display:flex;
   flex-directiom:row;
   justify-content:space-between;
