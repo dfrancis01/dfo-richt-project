@@ -24,4 +24,7 @@ shinyServer <- function(input, output, session) {
 
   #Model Result Page Module Server Code
   mod_Page_Models_Results_Server(id = "Page_Models_Results_1")
+
+  #Primary Research Results Page Module Server Code
+  mod_Page_Primary_Research_Results_Server(id="Page_Primary_Results_1")
 }

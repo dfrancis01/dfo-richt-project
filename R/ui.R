@@ -58,7 +58,7 @@ shinyUI <- function(session){
                 ,tabItem(tabName = "map", mod_Page_Map_UI(id = "Page_Map_1"))
                 ,tabItem(tabName = "species", mod_Page_Species_UI(id="Page_Species_1"))
                 ,tabItem(tabName = "features", mod_Page_Aquatic_Features_UI (id="Page_Features_1"))
-                ,tabItem(tabName = "primaryResults", h1("Primary Paper Search Results"))
+                ,tabItem(tabName = "primaryResults", mod_Page_Primary_Research_Results_UI(id="Page_Primary_Results_1"))
                 #Models Search Section
                 ,tabItem(tabName = "modelsResearch", mod_Page_Model_Info_UI(id = "Page_Model_Info_1"))
                 ,tabItem(tabName = "decisionAnalysis", mod_Page_Decision_Analysis_UI(id = "Page_Decision_Analysis_1"))
