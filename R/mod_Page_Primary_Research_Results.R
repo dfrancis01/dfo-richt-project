@@ -14,6 +14,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
 
     # Results Summary Section -------------------------------------------------------
      shiny::fluidRow(
+       class = "primary-results-summary",
       shinydashboardPlus::box(
         title = "Results Summary"
         ,id = ns("primaryReultPg-Summary")
@@ -25,14 +26,33 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
         #,align = "center"
         ,shiny::fluidRow(
           shinydashboardPlus::box(
-            title = div(span(icon("fish", lib = "font-awesome", class = "",style="float:left;"),"Species"),span(style="float:right;", "##"))
+            title = span(icon("fish", lib = "font-awesome", class = ""),"Species")
             ,status = "info"
             ,solidHeader = TRUE
             ,width = 4
             ,collapsible = TRUE
             ,headerBorder = TRUE
-            ,p(lorem)#p
-            ,p(lorem)#p
+            ,div(class="species-info",
+              div(
+                strong("Common Name:")#strong
+                ,span("Atlantic sturgeon")
+              )
+              ,hr()
+              ,div(
+                strong("Scientific Name:")#strong
+                ,span("Acipenser oxyrhynchus")
+              )
+              ,hr()
+              ,div(
+                strong("Family:")#strong
+                ,span("ACIPENSERIDAE")
+              )
+              ,hr()
+              ,div(
+                strong("Order:")#strong
+                ,span("ACIPENSERIFORMES")
+              )
+            )#div.species-info
           )#Box
           ,shinydashboardPlus::box(
             title = span(icon("search-location", lib = "font-awesome", class = ""),"Designatable Unit")
@@ -55,12 +75,13 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             ,p(lorem)#p
           )#Box
         )#fluidRow
-        ,h3("Total: ###")
+        ,h3("Total: ###,###,###,###")
       )#Box
     )#fluidRow
 
     # Map, Preview Table & Download Results Button Section ---------------------
     ,shiny::fluidRow(
+      class="primary-results-map",
       shinydashboardPlus::box(
         title = "Map"
         ,id = ns("primaryReultPg-map")

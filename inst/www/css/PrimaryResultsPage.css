@@ -1,0 +1,28 @@
+/*********************************************/
+/*Created by: Dorlan Francis                 */
+/*Date: June, 2022                           */
+/*Project: RiCHT                             */
+/*File: PrimaryResultsPage.css               */
+/*Description: Primary Results Page CSS File */
+/*********************************************/
+
+div.species-info > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.species-info > hr{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.primary-results-summary h3{
+  margin-top: 0px;
+}
+
+.primary-results-map .btn-app-dark{
+    height: 9rem;
+    margin-bottom: 5px;
+    font-size: large;
+}
