@@ -6,13 +6,13 @@
 /*Description: Primary Results Page CSS File */
 /*********************************************/
 
-div.species-info > div{
+div.results-box > div{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-div.species-info > hr{
+div.results-box > hr{
   margin-top: 3px;
   margin-bottom: 3px;
 }

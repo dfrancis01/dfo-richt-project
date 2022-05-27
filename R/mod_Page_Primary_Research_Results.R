@@ -25,6 +25,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
         ,headerBorder = TRUE
         #,align = "center"
         ,shiny::fluidRow(
+          #Species Results Box ----------------------------------------------------
           shinydashboardPlus::box(
             title = span(icon("fish", lib = "font-awesome", class = ""),"Species")
             ,status = "info"
@@ -32,7 +33,8 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             ,width = 4
             ,collapsible = TRUE
             ,headerBorder = TRUE
-            ,div(class="species-info",
+            #TODO replace mock-up with redertext output
+            ,div(class="results-box",
               div(
                 strong("Common Name:")#strong
                 ,span("Atlantic sturgeon")
@@ -52,8 +54,9 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
                 strong("Order:")#strong
                 ,span("ACIPENSERIFORMES")
               )
-            )#div.species-info
+            )#div.results-box
           )#Box
+          #Designatable Unit Results Box ----------------------------------------------------
           ,shinydashboardPlus::box(
             title = span(icon("search-location", lib = "font-awesome", class = ""),"Designatable Unit")
             ,status = "info"
@@ -61,9 +64,19 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             ,width = 4
             ,collapsible = TRUE
             ,headerBorder = TRUE
-            ,p(lorem)#p
-            ,p(lorem)#p
+            ,div(class="results-box",
+                 div(
+                   strong("Within Boundaries")#strong
+                   ,span("Xmin:###.##### Ymin:###.##### Xmax:###.##### Ymax:###.#####")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Köppen-Geiger climate Zome:")#strong
+                   ,span("Dfb")
+                 )
+            )#div.results-box
           )#Box
+          #Aquatic Features Results Box ----------------------------------------------------
           ,shinydashboardPlus::box(
             title = span(icon("water", lib = "font-awesome", class = ""),"Aquatic Features")
             ,status = "info"
@@ -94,9 +107,16 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
         ,leafletOutput(ns("map"))
 
       )#Box
+      #Action buttons Table Preview & Resutls Download
       ,column(width = 4,
-              shiny::actionButton(inputId = ns("previewResults"), label = "Preview Full Results Table", icon = icon("eye", lib = "font-awesome"), class = "btn btn-primary btn-block btn-app-dark")
-              ,shiny::actionButton(inputId = ns("downloadResults"), label = "Download Results", icon = icon("file-download", lib = "font-awesome"), class = "btn btn-primary btn-block btn-app-dark")
+              shiny::actionButton(inputId = ns("previewResults")
+                        ,label = "Preview Full Results Table"
+                        ,icon = icon("eye", lib = "font-awesome")
+                        ,class = "btn btn-primary btn-block btn-app-dark")
+              ,shiny::actionButton(inputId = ns("downloadResults")
+                        ,label = "Download Results"
+                        ,icon = icon("file-download",lib = "font-awesome")
+                        ,class = "btn btn-primary btn-block btn-app-dark")
       )#column
     )#fluidRow
 
@@ -151,10 +171,10 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
       )#Box
     )#fluidRow
 
-  )#tagList
+  )#fluidPage
 }#mod_Page_Primary_Research_Results_UI
 
-# Server ------------------------------------------------------------------
+# Server Section ------------------------------------------------------------------
 
 #' Primary Research Results Page Server
 #'
@@ -202,7 +222,9 @@ mod_Page_Primary_Research_Results_Server <- function(id) {
           addTiles()
       })
 
-      #TODO: Placeholder for search results Random Datatable from shinipsum
+      # TODO: Placeholder for search results Random Datatable from shinipsum
+      # Title, DOI, Publication Year, Species, Koppen-Geiger Climate Zone, and
+      # Aquatic Feature
       output$data_table <- DT::renderDT({
         shinipsum::random_DT(10, 5)
       })
