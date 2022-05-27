@@ -56,7 +56,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
               )
             )#div.results-box
           )#Box
-          #Designatable Unit Results Box ----------------------------------------------------
+          #Designatable Unit Results Box --------------------------------------------------------------
           ,shinydashboardPlus::box(
             title = span(icon("search-location", lib = "font-awesome", class = ""),"Designatable Unit")
             ,status = "info"
@@ -66,7 +66,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             ,headerBorder = TRUE
             ,div(class="results-box",
                  div(
-                   strong("Within Boundaries")#strong
+                   strong("Within Boundaries:")#strong
                    ,span("Xmin:###.##### Ymin:###.##### Xmax:###.##### Ymax:###.#####")
                  )
                  ,hr()
@@ -84,8 +84,27 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             ,width = 4
             ,collapsible = TRUE
             ,headerBorder = TRUE
-            ,p(lorem)#p
-            ,p(lorem)#p
+            ,div(class="results-box",
+                 div(
+                   strong("Slope:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Riparian vegetation:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Soil composition:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Canopy cover:")#strong
+                   ,span("###")
+                 )
+            )#div.results-box
           )#Box
         )#fluidRow
         ,h3("Total: ###,###,###,###")
@@ -185,7 +204,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
 #' @importFrom shinipsum random_ggplot
 #' @importFrom DT renderDT
 #' @importFrom shinyWidgets sendSweetAlert
-#' @importFrom leaflet renderLeaflet
+#' @importFrom leaflet renderLeaflet setView
 #'
 mod_Page_Primary_Research_Results_Server <- function(id) {
   #TODO:Module Inputs {Proxy_Map, Results_Data}
@@ -219,7 +238,8 @@ mod_Page_Primary_Research_Results_Server <- function(id) {
       #TODO: Temp placeholder for Proxy Map
       output$map <- leaflet::renderLeaflet({
         leaflet() %>%
-          addTiles()
+          leaflet::addTiles() %>%
+          leaflet::setView(lat=45.424721, lng=-75.695000, zoom=11)
       })
 
       # TODO: Placeholder for search results Random Datatable from shinipsum
