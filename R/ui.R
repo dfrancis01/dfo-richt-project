@@ -36,7 +36,7 @@ shinyUI <- function(session){
                 ,menuItem("Designatable Unit", tabName = "map", icon = icon("search-location", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow", selected = TRUE)
                 ,menuItem("Species", tabName = "species", icon = icon("fish", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Aquatic Features", tabName = "features", icon = icon("water", lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow")
-                ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red")
+                ,menuItem("Primary Results", tabName = "primaryResults", icon = icon("file",lib = "font-awesome"), badgeLabel = "con", badgeColor = "yellow")
 
                 ,menuItem(strong("Models"), tabName = "modelsResearch", icon = NULL, badgeLabel = "con", badgeColor = "yellow")
                 ,menuItem("Decision Analysis", tabName = "decisionAnalysis", icon = icon("sitemap", lib = "font-awesome"), badgeLabel = "dev", badgeColor = "red")
