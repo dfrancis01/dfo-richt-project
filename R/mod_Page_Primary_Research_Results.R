@@ -42,23 +42,27 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
             #TODO replace mock-up with redertext output
             ,div(class="results-box",
               div(
-                strong("Common Name:")#strong
-                ,span("Atlantic sturgeon")
+                span(strong("Common Name:")#strong
+                ,span("Atlantic Sturgeon"))
+                ,span("##")
               )
               ,hr()
               ,div(
-                strong("Scientific Name:")#strong
-                ,span("Acipenser oxyrhynchus")
+                span(strong("Scientific Name:")#strong
+                ,span("Acipenser Oxyrhynchus"))
+                ,span("##")
               )
               ,hr()
               ,div(
-                strong("Family:")#strong
-                ,span("ACIPENSERIDAE")
+                span(strong("Family:")#strong
+                ,span("ACIPENSERIDAE"))
+                ,span("##")
               )
               ,hr()
               ,div(
-                strong("Order:")#strong
-                ,span("ACIPENSERIFORMES")
+                span(strong("Order:")#strong
+                ,span("ACIPENSERIFORMES"))
+                ,span("##")
               )
             )#div.results-box
           )#Box
