@@ -6,23 +6,63 @@
 /*Description: Primary Results Page CSS File */
 /*********************************************/
 
-div.results-box > div{
+/*Set to full width of container, need for flex justify to work */
+.box-title{
+  width: 100%;
+}
+
+/*Puts a gap between icon and title*/
+/*Note:gap appears when icon class="" and disapears when class is removed*/
+.restuls-icon{
+  margin-right: 1px;
+}
+
+/*Allows title to flow to the left and return count to the right*/
+.results-box > div,
+.results-box-title{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-div.results-box > hr{
+/*Moved the count output to the right of collaps button*/
+.restuls-count{
+  padding-right: 20px;
+  padding-left: 2px;
+}
+
+/*Horizontal rule line styling inside returned results summary boxes*/
+.results-box > hr{
   margin-top: 3px;
   margin-bottom: 3px;
 }
 
-.primary-results-summary h3{
-  margin-top: 0px;
+/*Results total h3 top margin set to 1 reduded from default 20px*/
+.primary-results-h3{
+  margin-top: 1px;
 }
 
+/*Oversized buttons targeted by map class followed by dark class*/
 .primary-results-map .btn-app-dark{
     height: 9rem;
     margin-bottom: 5px;
     font-size: large;
+}
+
+.speciess-box,
+.designatable-map-box,
+.features-box
+{
+  min-height: 121px;
+}
+
+/*Max hight of features box content, overflow is scrollable */
+.features-box{
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/*Drop shadow CSS for Riparian & Koppen plots*/
+.richt-box-shadow div.box {
+    box-shadow: 5px 5px 5px lightgray;
 }

@@ -7,15 +7,13 @@
 #' @return Shiny FluidPage Primary Research Results Screen
 #' @noRd
 #'
-#'
 mod_Page_Primary_Research_Results_UI <- function(id) {
   ns <- NS(id)
   shiny::fluidPage(
 
     # Results Summary Section -------------------------------------------------------
      shiny::fluidRow(
-       class = "primary-results-summary",
-      shinydashboardPlus::box(
+       shinydashboardPlus::box(
         title = "Results Summary"
         ,id = ns("primaryReultPg-Summary")
         ,status = "info"
@@ -25,14 +23,22 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
         ,headerBorder = TRUE
         #,align = "center"
         ,shiny::fluidRow(
+          # class = "primary-results-summary",
           #Species Results Box ----------------------------------------------------
           shinydashboardPlus::box(
-            title = span(icon("fish", lib = "font-awesome", class = ""),"Species")
+            title = div(class="results-box-title"
+                ,span(
+                  icon("fish", lib = "font-awesome", class = "restuls-icon")
+                  ,"Species")
+                ,span(class = "restuls-count", "##,###,###,###")
+                )#div.restults-box-title
             ,status = "info"
             ,solidHeader = TRUE
+            ,height = 140
             ,width = 4
             ,collapsible = TRUE
             ,headerBorder = TRUE
+            ,class = "speciess-box"
             #TODO replace mock-up with redertext output
             ,div(class="results-box",
               div(
@@ -58,12 +64,19 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
           )#Box
           #Designatable Unit Results Box --------------------------------------------------------------
           ,shinydashboardPlus::box(
-            title = span(icon("search-location", lib = "font-awesome", class = ""),"Designatable Unit")
+            title = div(class="results-box-title"
+                ,span(
+                  icon("search-location", lib = "font-awesome", class = "restuls-icon")
+                  ,"Designatable Unit")
+                ,span(class = "restuls-count", "##,###,###,###")
+            )#div.restults-box-title
             ,status = "info"
             ,solidHeader = TRUE
             ,width = 4
+            ,height = 140
             ,collapsible = TRUE
             ,headerBorder = TRUE
+            ,class = "designatable-map-box"
             ,div(class="results-box",
                  div(
                    strong("Within Boundaries:")#strong
@@ -71,43 +84,70 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
                  )
                  ,hr()
                  ,div(
-                   strong("Köppen-Geiger climate Zome:")#strong
+                   strong("K\u00F6ppen-Geiger Climate Zone:")#strong #Köppen-Geiger Climate Zone:
                    ,span("Dfb")
                  )
             )#div.results-box
           )#Box
           #Aquatic Features Results Box ----------------------------------------------------
           ,shinydashboardPlus::box(
-            title = span(icon("water", lib = "font-awesome", class = ""),"Aquatic Features")
+            title = div(class="results-box-title"
+                ,span(
+                  icon("water", lib = "font-awesome", class = "restuls-icon")
+                  ,"Aquatic Features")
+                ,span(class = "restuls-count", "##,###,###,###")
+            )#div.restults-box-title
             ,status = "info"
             ,solidHeader = TRUE
             ,width = 4
+            ,height = 140
             ,collapsible = TRUE
             ,headerBorder = TRUE
+            ,class = "features-box"
             ,div(class="results-box",
                  div(
-                   strong("Slope:")#strong
+                   strong("Feature 1:")#strong
                    ,span("###")
                  )
                  ,hr()
                  ,div(
-                   strong("Riparian vegetation:")#strong
+                   strong("Feature 2:")#strong
                    ,span("###")
                  )
                  ,hr()
                  ,div(
-                   strong("Soil composition:")#strong
+                   strong("Feature 3:")#strong
                    ,span("###")
                  )
                  ,hr()
                  ,div(
-                   strong("Canopy cover:")#strong
+                   strong("Feature 4:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Feature 5:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Feature 6:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Feature 7:")#strong
+                   ,span("###")
+                 )
+                 ,hr()
+                 ,div(
+                   strong("Feature 8:")#strong
                    ,span("###")
                  )
             )#div.results-box
           )#Box
         )#fluidRow
-        ,h3("Total: ###,###,###,###")
+        ,h3(class="primary-results-h3","Total: ###,###,###,###")
       )#Box
     )#fluidRow
 
@@ -165,6 +205,7 @@ mod_Page_Primary_Research_Results_UI <- function(id) {
         ,collapsible = TRUE
         ,headerBorder = TRUE
         ,align = "center"
+        ,class="richt-box-shadow"
         ,shinydashboardPlus::box(
           title = "Riparian Widths Examined"
           ,id = ns("primaryReultPg-Riparian_Width")
@@ -235,7 +276,7 @@ mod_Page_Primary_Research_Results_Server <- function(id) {
         )
       })
 
-      #TODO: Temp placeholder for Proxy Map
+      #TODO: Temp placeholder for Proxy Map, location set to Ottawa
       output$map <- leaflet::renderLeaflet({
         leaflet() %>%
           leaflet::addTiles() %>%
