@@ -291,7 +291,7 @@ mod_Page_Primary_Research_Results_Server <- function(id) {
       # Title, DOI, Publication Year, Species, Koppen-Geiger Climate Zone, and
       # Aquatic Feature
       output$data_table <- DT::renderDT({
-        shinipsum::random_DT(10, 5)
+        shinipsum::random_DT(10, 5, options = list(scrollX = TRUE))
       })
 
       #TODO: Placeholder Riparian Widths Random Plot from shinyipsum
