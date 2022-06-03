@@ -27,4 +27,16 @@ shinyServer <- function(input, output, session) {
 
   #Primary Research Results Page Module Server Code
   mod_Page_Primary_Research_Results_Server(id="Page_Primary_Results_1")
+
+  #Primary Research Info Module Nav Buttons click events
+  navEvents <- mod_Page_Primary_Research_Info_Server(id = "Page_Primary_Research_Info_1")
+  observeEvent(navEvents$map(),{
+    shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "map")
+  })
+  observeEvent(navEvents$species(),{
+    shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "species")
+  })
+  observeEvent(navEvents$features(),{
+    shinydashboard::updateTabItems(session, inputId = "RiCHTSidebarMenu", selected = "features")
+  })
 }
