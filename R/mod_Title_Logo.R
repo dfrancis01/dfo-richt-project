@@ -12,9 +12,9 @@ mod_Title_Logo_UI <- function(id) {
   tagList(
     tags$a(href = "https://doi.org/10.1186/s13750-021-00231-1", class = "logo",                    #Link to the paper systematic map protocol
           tags$span(class = "logo-mini",
-                    tags$img(width="50px",height="50px",src = "img/RiCHT_64x64px.png", class = "")),
+                    tags$img(width="50px",height="50px",src = "img/RiCHToutlinedlogo_64x64px.png", class = "")),
           tags$span(class = "logo-lg", id="RiCHTLogoText",
-                  img(width="50px",height="50px", src = "img/RiCHT_64x64px.png", class = ""), "RiCHT")
+                  img(width="50px",height="50px", src = "img/RiCHToutlinedlogo_64x64px.png", class = ""), "RiCHT")
           )#a
         )#tagList
 }#mod_Title_Logo_UI

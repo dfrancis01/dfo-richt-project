@@ -33,10 +33,6 @@
   padding: 0;                               /*Removed padding so image visible*/
 }
 
-a.logo > span > img {
-  background-color: white;
-}
-
 /*GC Footer */
 .footer-wrapper{                            /*.footer-wrapper override*/
   display:flex;
