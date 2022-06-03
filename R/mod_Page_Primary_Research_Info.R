@@ -36,7 +36,7 @@ mod_Page_Primary_Research_Info_UI <- function(id) {
     # Species Designatable Unit Aquatic Features Section ----------------------------------------------------
     , fluidRow(
       shinydashboardPlus::box(
-        title = span(icon("fish", lib = "font-awesome", class = "fa-lg"),"Species")
+        title = span(icon("search-location", lib = "font-awesome", class = "fa-lg"),"Designatable Unit")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 4
@@ -46,7 +46,7 @@ mod_Page_Primary_Research_Info_UI <- function(id) {
         ,p(lorem)#p
       )#Box
       ,shinydashboardPlus::box(
-        title = span(icon("search-location", lib = "font-awesome", class = "fa-lg"),"Designatable Unit")
+        title = span(icon("fish", lib = "font-awesome", class = "fa-lg"),"Species")
         ,status = "info"
         ,solidHeader = TRUE
         ,width = 4
